@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Padel</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>padel</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>paddle-app.ru</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>https</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>ru.paddle.app oauth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ru.paddle.app</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>vk oauth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>vk54063347</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>paddle payment</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>paddle</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>FlutterDeepLinkingEnabled</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>vk</string>
+		<string>vk-share</string>
+		<string>vkauthorize</string>
+		<string>vkauthorize-silent</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_dartobservatory._tcp</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Приложению требуется доступ к камере для создания фото профиля</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Приложению требуется доступ к локальной сети для отладки</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Для корректной работы функций рядом со мной приложению нужен доступ к геолокации.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Для показа ближайших клубов и построения маршрутов приложению нужен доступ к вашей геолокации при использовании.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Приложению требуется доступ к галерее для выбора фото профиля</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Приложению требуется доступ к календарю для добавления тренировок в ваш личный календарь</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>VKAppId</key>
+	<string>54063347</string>
+	<key>VK_APP_CLIENT_ID</key>
+	<string>54063347</string>
+	<key>VK_APP_CLIENT_SECRET</key>
+	<string>psZy9zAddNAsilR9euiI</string>
+</dict>
+</plist>

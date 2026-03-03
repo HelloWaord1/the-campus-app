@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "46566986830",
+    "project_id": "paddle-tennis-ace",
+    "storage_bucket": "paddle-tennis-ace.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46566986830:android:8878c144e31ae101199f1f",
+        "android_client_info": {
+          "package_name": "rocket.padel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1a7ya7-o58zZ0FBQwrlaKAbxuIjh8gSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

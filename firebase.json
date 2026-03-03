@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"paddle-tennis-ace","appId":"1:46566986830:android:8878c144e31ae101199f1f","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"paddle-tennis-ace","configurations":{"android":"1:46566986830:android:8878c144e31ae101199f1f","ios":"1:46566986830:ios:b3088b10b7ff549e199f1f"}}}}}}
