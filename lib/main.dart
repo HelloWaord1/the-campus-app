@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'firebase_options.dart';
-import 'dart:io' show Platform, exit;
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:flutter/services.dart'; // portrtait
 import 'screens/register_screen.dart';
@@ -23,10 +23,13 @@ import 'screens/courts/booking_details_screen.dart';
 import 'screens/competition_details_screen.dart';
 import 'screens/training_detail_screen.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+// dart:io не доступен на web, импортируем условно через stub
+import 'utils/platform_utils.dart';
 // duplicate import removed
 // FCM background handler должен быть топ-уровневой функцией
 @pragma('vm:entry-point')
 Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  if (kIsWeb) return;
   try {
     if (Firebase.apps.isEmpty) {
       await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
@@ -66,67 +69,72 @@ void main() async {
     DeviceOrientation.portraitUp, // portrait
   ]); // portrait
   await initializeDateFormatting('ru', null);
-  if (Firebase.apps.isEmpty) {
-    if (Platform.isIOS) {
-      // iOS: уже есть конфигурация из AppDelegate (GoogleService-Info.plist)
-      await Firebase.initializeApp();
-    } else {
-      await Firebase.initializeApp(
-        options: DefaultFirebaseOptions.currentPlatform,
-      );
-    }
-  }
-  // Регистрируем обработчик фоновых сообщений FCM
-  FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
-  try {
-    print('[FCM] requesting notification permission...');
-    final settings = await FirebaseMessaging.instance.requestPermission();
-    print('[FCM] permission status: ${settings.authorizationStatus}');
 
-    final String? fcmToken = await FirebaseMessaging.instance.getToken();
-    print('[FCM] initial token: ${fcmToken == null ? 'null' : (fcmToken.length <= 10 ? '***' : '${fcmToken.substring(0,6)}...${fcmToken.substring(fcmToken.length-4)}')}');
-
-    // Если пользователь уже авторизован, регистрируем токен на бэкенде при старте
-    try {
-      final bool isLoggedIn = await AuthStorage.isLoggedIn();
-      if (isLoggedIn) {
-        print('[FCM] user is logged in, registering token on backend...');
-        await ApiService.registerPushToken(overrideToken: fcmToken);
-        print('[FCM] backend registration completed');
+  // Firebase и FCM только на мобильных платформах
+  if (!kIsWeb) {
+    if (Firebase.apps.isEmpty) {
+      if (PlatformUtils.isIOS) {
+        // iOS: уже есть конфигурация из AppDelegate (GoogleService-Info.plist)
+        await Firebase.initializeApp();
+      } else {
+        await Firebase.initializeApp(
+          options: DefaultFirebaseOptions.currentPlatform,
+        );
       }
-    } catch (e) {
-      debugPrint('[FCM] register on startup failed: $e');
     }
+    // Регистрируем обработчик фоновых сообщений FCM
+    FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
+    try {
+      print('[FCM] requesting notification permission...');
+      final settings = await FirebaseMessaging.instance.requestPermission();
+      print('[FCM] permission status: ${settings.authorizationStatus}');
 
-    // Подписываемся на обновление FCM токена и пере-регистрируем на бэкенде
-    FirebaseMessaging.instance.onTokenRefresh.listen((String newToken) async {
-      final masked = newToken.length <= 10 ? '***' : '${newToken.substring(0,6)}...${newToken.substring(newToken.length-4)}';
-      print('[FCM] token refreshed: $masked');
+      final String? fcmToken = await FirebaseMessaging.instance.getToken();
+      print('[FCM] initial token: ${fcmToken == null ? 'null' : (fcmToken.length <= 10 ? '***' : '${fcmToken.substring(0,6)}...${fcmToken.substring(fcmToken.length-4)}')}');
+
+      // Если пользователь уже авторизован, регистрируем токен на бэкенде при старте
       try {
         final bool isLoggedIn = await AuthStorage.isLoggedIn();
         if (isLoggedIn) {
-          print('[FCM] user is logged in, re-registering refreshed token...');
-          await ApiService.registerPushToken(overrideToken: newToken);
-          print('[FCM] backend re-registration completed');
+          print('[FCM] user is logged in, registering token on backend...');
+          await ApiService.registerPushToken(overrideToken: fcmToken);
+          print('[FCM] backend registration completed');
         }
       } catch (e) {
-        debugPrint('[FCM] register on refresh failed: $e');
+        debugPrint('[FCM] register on startup failed: $e');
       }
-    });
-  } catch (e) {
-    print('[FCM] failed to get token: $e');
-  }
-  
-  // Обработка пуш-диплинка при запуске (tap по уведомлению из "убитого" состояния)
-  try {
-    final RemoteMessage? initialMessage = await FirebaseMessaging.instance.getInitialMessage();
-    if (initialMessage != null) {
-      debugPrint('[Main] getInitialMessage data=${initialMessage.data}');
-      DeepLinkService().handleDeeplinkFromPushData(initialMessage.data);
+
+      // Подписываемся на обновление FCM токена и пере-регистрируем на бэкенде
+      FirebaseMessaging.instance.onTokenRefresh.listen((String newToken) async {
+        final masked = newToken.length <= 10 ? '***' : '${newToken.substring(0,6)}...${newToken.substring(newToken.length-4)}';
+        print('[FCM] token refreshed: $masked');
+        try {
+          final bool isLoggedIn = await AuthStorage.isLoggedIn();
+          if (isLoggedIn) {
+            print('[FCM] user is logged in, re-registering refreshed token...');
+            await ApiService.registerPushToken(overrideToken: newToken);
+            print('[FCM] backend re-registration completed');
+          }
+        } catch (e) {
+          debugPrint('[FCM] register on refresh failed: $e');
+        }
+      });
+    } catch (e) {
+      print('[FCM] failed to get token: $e');
     }
-  } catch (_) {}
+
+    // Обработка пуш-диплинка при запуске (tap по уведомлению из "убитого" состояния)
+    try {
+      final RemoteMessage? initialMessage = await FirebaseMessaging.instance.getInitialMessage();
+      if (initialMessage != null) {
+        debugPrint('[Main] getInitialMessage data=${initialMessage.data}');
+        DeepLinkService().handleDeeplinkFromPushData(initialMessage.data);
+      }
+    } catch (_) {}
+  }
+
   await _AppLinkHandler.init();
-  
+
   runApp(const MyApp());
   // Инициализируем сервис глубоких ссылок после запуска UI, чтобы навигатор уже существовал
   // и были назначены колбэки в MyApp.initState
@@ -172,13 +180,13 @@ class _MyAppState extends State<MyApp> {
     if (_isHandlingForceUpdate) return;
     _isHandlingForceUpdate = true;
     try {
-      if (!Platform.isAndroid && !Platform.isIOS) {
+      if (!PlatformUtils.isMobile) {
         _isHandlingForceUpdate = false;
         return;
       }
 
       final policy = await ApiService.getAppVersionPolicy();
-      final platformKey = Platform.isAndroid ? 'android' : 'ios';
+      final platformKey = PlatformUtils.isAndroid ? 'android' : 'ios';
 
       final dynamic platformPolicyRaw = policy[platformKey];
       if (platformPolicyRaw is! Map) {
@@ -260,8 +268,8 @@ class _MyAppState extends State<MyApp> {
                               // Непропускаемый экран: предлагаем обновиться вручную и перезапустить приложение.
                               // Ссылку на стор намеренно не используем.
                               try {
-                                if (Platform.isIOS) {
-                                  exit(0);
+                                if (PlatformUtils.isIOS) {
+                                  PlatformUtils.exitApp();
                                 } else {
                                   SystemNavigator.pop();
                                 }
@@ -512,6 +520,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _setupPushOpenHandler() {
+    if (kIsWeb) return; // FCM не используется на web
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
       try {
         debugPrint('[MyApp] onMessageOpenedApp data=${message.data}');

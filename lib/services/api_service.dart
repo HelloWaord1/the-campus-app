@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 import 'package:mime/mime.dart';
@@ -89,7 +90,7 @@ class ApiService {
   // Регистрация FCM токена на бэкенде
   static Future<void> registerPushToken({String? overrideToken, String? platform, String? deviceInfo}) async {
     try {
-      Logger.info('🔔 Регистрация пуш-токена начата (override=${overrideToken != null}, platform=${platform ?? (Platform.isAndroid ? 'android' : Platform.isIOS ? 'ios' : 'web')})');
+      Logger.info('🔔 Регистрация пуш-токена начата (override=${overrideToken != null}, platform=${platform ?? (kIsWeb ? 'web' : Platform.isAndroid ? 'android' : 'ios')})');
       final String? token = overrideToken ?? await FirebaseMessaging.instance.getToken();
       if (token == null || token.isEmpty) {
         Logger.error('🔔 FCM токен отсутствует. Регистрация невозможна. Проверьте разрешения/entitlements/APNs связку.');
@@ -97,7 +98,7 @@ class ApiService {
       }
       final Map<String, dynamic> body = {
         'token': token,
-        'platform': platform ?? (Platform.isAndroid ? 'android' : Platform.isIOS ? 'ios' : 'web'),
+        'platform': platform ?? (kIsWeb ? 'web' : Platform.isAndroid ? 'android' : 'ios'),
       };
       if (deviceInfo != null) {
         body['device_info'] = deviceInfo;

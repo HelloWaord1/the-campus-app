@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'package:flutter/foundation.dart' show kIsWeb, defaultTargetPlatform, TargetPlatform;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../utils/responsive_utils.dart';
@@ -25,7 +25,7 @@ class BottomNavBar extends StatelessWidget {
     final double bottomInset;
     final double bottomPadding;
     
-    if (Platform.isAndroid) {
+    if (!kIsWeb && defaultTargetPlatform == TargetPlatform.android) {
       // Android: используем viewPadding для системной панели навигации
       bottomInset = MediaQuery.of(context).viewPadding.bottom;
       bottomPadding = bottomInset;
