@@ -17,10 +17,10 @@ import '../models/training.dart';
 import '../models/court.dart';
 
 class ApiService {
-  // Для продакшена: 'https://the-campus.app'
+  // Для продакшена: 'https://campus-server-production.up.railway.app'
   // Для локальной разработки на iOS симуляторе: 'http://localhost:8000'
   // Для локальной разработки на Android эмуляторе: 'http://10.0.2.2:8000'
-  static const String baseUrl = 'https://the-campus.app';
+  static const String baseUrl = 'https://campus-server-production.up.railway.app';
   //static const String baseUrl = 'http://localhost:8000';
 
   static Future<void> _handleUnauthorized() async {

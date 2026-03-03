@@ -1,7 +1,7 @@
 // Константы для API эндпоинтов
 class ApiEndpoints {
   // Базовый URL API
-  static const String baseUrl = 'https://the-campus.app';
+  static const String baseUrl = 'https://campus-server-production.up.railway.app';
   
   // Эндпоинты для клубов
   static const String clubs = '/api/clubs';
