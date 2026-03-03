@@ -248,7 +248,7 @@ class _TrainingsScreenState extends State<TrainingsScreen> {
                   width: 20.4, // Уменьшено на 15% от 24
                   height: 20.4,
                   colorFilter: const ColorFilter.mode(
-                    Color(0xFF262F63),
+                    Color(0xFF00897B),
                     BlendMode.srcIn,
                   ),
                 ),
@@ -301,7 +301,7 @@ class _TrainingsScreenState extends State<TrainingsScreen> {
                         border: Border(
                           bottom: BorderSide(
                             color: _selectedTab == 'available' 
-                                ? const Color(0xFF262F63) 
+                                ? const Color(0xFF00897B) 
                                 : const Color(0xFFD9D9D9),
                             width: _selectedTab == 'available' ? 2 : 1,
                           ),
@@ -337,7 +337,7 @@ class _TrainingsScreenState extends State<TrainingsScreen> {
                         border: Border(
                           bottom: BorderSide(
                             color: _selectedTab == 'my_trainings' 
-                                ? const Color(0xFF262F63) 
+                                ? const Color(0xFF00897B) 
                                 : const Color(0xFFD9D9D9),
                             width: _selectedTab == 'my_trainings' ? 2 : 1,
                           ),
@@ -710,7 +710,7 @@ class _TrainingsScreenState extends State<TrainingsScreen> {
                   Text(
                     '${training.price.toInt()}₽',
                     style: const TextStyle(
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                       fontFamily: 'SF Pro Display',
@@ -783,7 +783,7 @@ class _TrainingsScreenState extends State<TrainingsScreen> {
               child: const Icon(
                 Icons.add,
                 size: 16,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
               ),
             ),
           ),

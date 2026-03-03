@@ -208,7 +208,7 @@ class _ExistingUserLoginScreenState extends State<ExistingUserLoginScreen> {
               padding: const EdgeInsets.only(left: 16),
               child: GestureDetector(
               onTap: () => Navigator.of(context).pop(),
-              child: const Icon(Icons.chevron_left, size: 32, color: Color(0xFF262F63)),
+              child: const Icon(Icons.chevron_left, size: 32, color: Color(0xFF00897B)),
               ),
             ),
             
@@ -251,7 +251,7 @@ class _ExistingUserLoginScreenState extends State<ExistingUserLoginScreen> {
           children: [
             const Icon(
               Icons.chevron_left,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               size: 28,
             ),
             const SizedBox(width: 8),
@@ -261,7 +261,7 @@ class _ExistingUserLoginScreenState extends State<ExistingUserLoginScreen> {
                 fontFamily: 'SF Pro Display',
                 fontWeight: FontWeight.w500,
                 fontSize: 16,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                 letterSpacing: -0.85,
               ),
             ),
@@ -346,7 +346,7 @@ class _ExistingUserLoginScreenState extends State<ExistingUserLoginScreen> {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: Color(0xFF262F63), width: 1),
+              borderSide: const BorderSide(color: Color(0xFF00897B), width: 1),
             ),
           ),
           onFieldSubmitted: (_) => _login(),
@@ -366,7 +366,7 @@ class _ExistingUserLoginScreenState extends State<ExistingUserLoginScreen> {
         child: ElevatedButton(
           onPressed: _isLoading || !isEnabled ? null : _login,
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF262F63),
+            backgroundColor: const Color(0xFF00897B),
             disabledBackgroundColor: const Color(0xFF7F8AC0),
             foregroundColor: Colors.white,
             disabledForegroundColor: Colors.white,

@@ -386,7 +386,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
-                    color: Color(0xFF262F63),
+                    color: Color(0xFF00897B),
                     fontFamily: 'SF Pro Display',
                     letterSpacing: -0.62,
                   ),
@@ -436,7 +436,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
-                    color: Color(0xFF262F63),
+                    color: Color(0xFF00897B),
                     fontFamily: 'SF Pro Display',
                     letterSpacing: -0.32,
                   ),
@@ -611,7 +611,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
-                        color: Color(0xFF262F63),
+                        color: Color(0xFF00897B),
                         fontFamily: 'SF Pro Display',
                         letterSpacing: -0.32,
                       ),
@@ -696,7 +696,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
                                 style: const TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
-                                  color: Color(0xFF262F63),
+                                  color: Color(0xFF00897B),
                                   fontFamily: 'SF Pro Display',
                                 ),
                               ),
@@ -959,7 +959,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
                           child: ElevatedButton(
                             onPressed: () => _join(),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF262F63),
+                              backgroundColor: const Color(0xFF00897B),
                               foregroundColor: Colors.white,
                               elevation: 0,
                               shape: RoundedRectangleBorder(
@@ -1000,7 +1000,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
             child: LinearProgressIndicator(
               value: percent,
               backgroundColor: const Color(0xFFE6E6E6),
-              valueColor: const AlwaysStoppedAnimation(Color(0xFF262F63)),
+              valueColor: const AlwaysStoppedAnimation(Color(0xFF00897B)),
               minHeight: 4,
             ),
           ),
@@ -1212,7 +1212,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border.all(
-                                    color: selectedMode == 0 ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+                                    color: selectedMode == 0 ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
                                     width: selectedMode == 0 ? 2 : 1,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
@@ -1241,7 +1241,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border.all(
-                                    color: selectedMode == 1 ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+                                    color: selectedMode == 1 ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
                                     width: selectedMode == 1 ? 2 : 1,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
@@ -1289,7 +1289,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
                             }
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFF262F63),
+                            backgroundColor: const Color(0xFF00897B),
                             foregroundColor: Colors.white,
                             elevation: 0,
                             shape: RoundedRectangleBorder(
@@ -1423,7 +1423,7 @@ class _CompetitionDetailsScreenState extends State<CompetitionDetailsScreen> {
   }
 
   Future<void> _shareCompetition() async {
-    final url = 'https://paddle-app.ru/competition/${widget.competitionId}';
+    final url = 'https://the-campus.app/competition/${widget.competitionId}';
     try {
       await Clipboard.setData(ClipboardData(text: url));
       if (!mounted) return;
@@ -1781,7 +1781,7 @@ class _PickCompanionContentState extends State<_PickCompanionContent> {
                               ElevatedButton(
                                 onPressed: () => widget.onPick(friend.id),
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFF262F63),
+                                  backgroundColor: const Color(0xFF00897B),
                                   foregroundColor: Colors.white,
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -1973,7 +1973,7 @@ class _PlaceColumn extends StatelessWidget {
                       fontFamily: 'SF Pro Display',
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                       letterSpacing: -0.28,
                     ),
                     maxLines: 1,
@@ -1996,7 +1996,7 @@ class _PlaceColumn extends StatelessWidget {
                     width: 30,
                     height: 30,
                     decoration: BoxDecoration(
-                      color: const Color(0xFF262F63),
+                      color: const Color(0xFF00897B),
                       shape: BoxShape.circle,
                       border: Border.all(color: Colors.white, width: 2),
                     ),
@@ -2014,7 +2014,7 @@ class _PlaceColumn extends StatelessWidget {
                     width: 30,
                     height: 30,
                     decoration: BoxDecoration(
-                      color: const Color(0xFF262F63),
+                      color: const Color(0xFF00897B),
                       shape: BoxShape.circle,
                       border: Border.all(color: Colors.white, width: 2),
                     ),
@@ -2069,7 +2069,7 @@ class _PlaceColumn extends StatelessWidget {
         fontFamily: 'SF Pro Display',
         fontSize: 14,
         fontWeight: FontWeight.w500,
-        color: Color(0xFF262F63),
+        color: Color(0xFF00897B),
         letterSpacing: -0.28,
       ),
     );

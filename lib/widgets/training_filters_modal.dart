@@ -119,9 +119,9 @@ class _DistanceSlider extends StatelessWidget {
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
               trackHeight: 2,
-              activeTrackColor: const Color(0xFF262F63),
+              activeTrackColor: const Color(0xFF00897B),
               inactiveTrackColor: const Color(0xFFD9D9D9),
-              thumbColor: const Color(0xFF262F63),
+              thumbColor: const Color(0xFF00897B),
               overlayColor: Colors.transparent,
               thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 10),
               trackShape: const _FullWidthSliderTrackShape(),
@@ -470,7 +470,7 @@ class _TrainingFiltersScreenState extends State<TrainingFiltersScreen> {
                     width: 48,
                     height: 48,
                     decoration: BoxDecoration(
-                      color: isSelected ? const Color(0xFF262F63) : const Color(0xFFF5F5F5),
+                      color: isSelected ? const Color(0xFF00897B) : const Color(0xFFF5F5F5),
                       borderRadius: BorderRadius.circular(32),
                     ),
                     alignment: Alignment.center,
@@ -576,7 +576,7 @@ class _TrainingFiltersScreenState extends State<TrainingFiltersScreen> {
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(
-            color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+            color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
             width: isSelected ? 2 : 1,
           ),
           borderRadius: BorderRadius.circular(8),
@@ -786,7 +786,7 @@ class _TrainingFiltersScreenState extends State<TrainingFiltersScreen> {
           Navigator.pop(context);
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF262F63),
+          backgroundColor: const Color(0xFF00897B),
           foregroundColor: Colors.white,
           padding: const EdgeInsets.symmetric(vertical: 16),
           shape: RoundedRectangleBorder(
@@ -824,7 +824,7 @@ class _TrainingFiltersScreenState extends State<TrainingFiltersScreen> {
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(
-            color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+            color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
             width: isSelected ? 2 : 1,
           ),
           borderRadius: BorderRadius.circular(8),

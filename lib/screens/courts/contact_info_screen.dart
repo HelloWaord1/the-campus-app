@@ -461,7 +461,7 @@ class _ContactInfoScreenState extends State<ContactInfoScreen> {
                                 if (states.contains(MaterialState.disabled)) {
                                   return const Color(0xFF7F8AC0);
                                 }
-                                return const Color(0xFF262F63);
+                                return const Color(0xFF00897B);
                               }),
                               padding: MaterialStateProperty.all(
                                 const EdgeInsets.symmetric(vertical: 16),

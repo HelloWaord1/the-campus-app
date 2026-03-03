@@ -209,14 +209,14 @@ class _CompleteRegistrationScreenState
       child: const Row(
         mainAxisSize: MainAxisSize.min,
                         children: [
-          Icon(Icons.chevron_left, color: Color(0xFF262F63)),
+          Icon(Icons.chevron_left, color: Color(0xFF00897B)),
           SizedBox(width: 8),
           Text(
             'Назад',
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                 letterSpacing: -0.85),
                           ),
                         ],
@@ -254,7 +254,7 @@ class _CompleteRegistrationScreenState
         children: <TextSpan>[
           TextSpan(text: text.substring(0, text.length - 1)),
           const TextSpan(
-              text: '*', style: TextStyle(color: Color(0xFFEC2D20))),
+              text: '*', style: TextStyle(color: Color(0xFFFF6B6B))),
         ],
       ),
     );
@@ -382,7 +382,7 @@ class _CompleteRegistrationScreenState
                 child: Text(
                   state.errorText!,
                   style: const TextStyle(
-                    color: Color(0xFFEC2D20),
+                    color: Color(0xFFFF6B6B),
                     fontSize: 12,
                     letterSpacing: -0.5,
                                       ),
@@ -438,7 +438,7 @@ class _CompleteRegistrationScreenState
               ),
               focusedBorder: OutlineInputBorder( // Обводка при фокусе
                 borderRadius: BorderRadius.circular(12),
-                borderSide: const BorderSide(color: Color(0xFF262F63), width: 1.0),
+                borderSide: const BorderSide(color: Color(0xFF00897B), width: 1.0),
               ),
               contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
               suffixIcon: suffixIcon,
@@ -451,7 +451,7 @@ class _CompleteRegistrationScreenState
             child: Text(
               helperText,
               // Устанавливаем цвет в зависимости от статуса
-              style: TextStyle(color: _isPhoneConfirmed ? const Color(0xFF262F63) : const Color(0xFFEC2D20), fontSize: 12, letterSpacing: -0.5),
+              style: TextStyle(color: _isPhoneConfirmed ? const Color(0xFF00897B) : const Color(0xFFFF6B6B), fontSize: 12, letterSpacing: -0.5),
             ),
           )
       ],
@@ -496,7 +496,7 @@ class _CompleteRegistrationScreenState
                   child: Text(
                     state.errorText!,
                     style: const TextStyle(
-                      color: Color(0xFFEC2D20),
+                      color: Color(0xFFFF6B6B),
                       fontSize: 12,
                       letterSpacing: -0.5,
                     ),
@@ -527,7 +527,7 @@ class _CompleteRegistrationScreenState
   }
 
   Widget _buildValidationRow(String text, bool isValid) {
-    final color = isValid ? const Color(0xFF262F63) : const Color(0xFFEC2D20); // Красный для невыполненных
+    final color = isValid ? const Color(0xFF00897B) : const Color(0xFFFF6B6B); // Красный для невыполненных
     final IconData icon = isValid ? Icons.check_circle : Icons.cancel;
     return Row(
       children: [
@@ -592,7 +592,7 @@ class _CompleteRegistrationScreenState
         onPressed: (_phoneController.text.trim().length < 18 || _isPhoneConfirmationLoading) ? null : _confirmPhoneNumber,
                           style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
-          backgroundColor: const Color(0xFF262F63),
+          backgroundColor: const Color(0xFF00897B),
           disabledBackgroundColor: const Color(0xFF7F8AC0),
                             shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -698,7 +698,7 @@ class _CompleteRegistrationScreenState
                 padding: const EdgeInsets.only(top: 8.0),
                 child: const Text(
                   'Подтверждена',
-                  style: TextStyle(color: Color(0xFF262F63), fontSize: 12, letterSpacing: -0.5),
+                  style: TextStyle(color: Color(0xFF00897B), fontSize: 12, letterSpacing: -0.5),
                 ),
               )
             else
@@ -706,7 +706,7 @@ class _CompleteRegistrationScreenState
                 padding: const EdgeInsets.only(top: 8.0),
                 child: Text(
                   state.hasError ? state.errorText! : (_emailError ?? 'Не подтверждена'),
-                  style: const TextStyle(color: Color(0xFFEC2D20), fontSize: 12, letterSpacing: -0.5),
+                  style: const TextStyle(color: Color(0xFFFF6B6B), fontSize: 12, letterSpacing: -0.5),
                 ),
               ),
           ],
@@ -723,7 +723,7 @@ class _CompleteRegistrationScreenState
         onPressed: (_emailController.text.trim().isEmpty || _isEmailConfirmationLoading || _validateEmailLikeRegister(_emailController.text.trim()) != null) ? null : _confirmEmail,
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
-          backgroundColor: const Color(0xFF262F63),
+          backgroundColor: const Color(0xFF00897B),
           disabledBackgroundColor: const Color(0xFF7F8AC0),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -823,7 +823,7 @@ class _CompleteRegistrationScreenState
             padding: const EdgeInsets.only(top: 8.0),
             child: const Text(
               'Подтвержден',
-              style: TextStyle(color: Color(0xFF262F63), fontSize: 12, letterSpacing: -0.5),
+              style: TextStyle(color: Color(0xFF00897B), fontSize: 12, letterSpacing: -0.5),
             ),
           )
         else
@@ -831,7 +831,7 @@ class _CompleteRegistrationScreenState
             padding: const EdgeInsets.only(top: 8.0),
             child: Text(
               _phoneError ?? 'Не подтвержден',
-              style: const TextStyle(color: Color(0xFFEC2D20), fontSize: 12, letterSpacing: -0.5),
+              style: const TextStyle(color: Color(0xFFFF6B6B), fontSize: 12, letterSpacing: -0.5),
             ),
           ),
       ],
@@ -858,23 +858,23 @@ class _CompleteRegistrationScreenState
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
         borderSide: BorderSide(
-            color: hasError ? const Color(0xFFEC2D20) : const Color(0xFFE0E0E0),
+            color: hasError ? const Color(0xFFFF6B6B) : const Color(0xFFE0E0E0),
             width: 1.0),
       ),
       focusedBorder: OutlineInputBorder(
         // Обводка при фокусе
         borderRadius: BorderRadius.circular(12),
         borderSide: BorderSide(
-            color: hasError ? const Color(0xFFEC2D20) : const Color(0xFF262F63),
+            color: hasError ? const Color(0xFFFF6B6B) : const Color(0xFF00897B),
             width: 1.0),
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: const BorderSide(color: Color(0xFFEC2D20), width: 1.0),
+        borderSide: const BorderSide(color: Color(0xFFFF6B6B), width: 1.0),
       ),
       focusedErrorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: const BorderSide(color: Color(0xFFEC2D20), width: 1.0),
+        borderSide: const BorderSide(color: Color(0xFFFF6B6B), width: 1.0),
       ),
       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
       suffixIcon: suffixIcon,
@@ -888,7 +888,7 @@ class _CompleteRegistrationScreenState
         onPressed: _isLoading ? null : _navigateToSkillTest,
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
-          backgroundColor: const Color(0xFF262F63),
+          backgroundColor: const Color(0xFF00897B),
           disabledBackgroundColor: const Color(0xFF7F8AC0),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),

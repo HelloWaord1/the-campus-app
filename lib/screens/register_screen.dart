@@ -449,7 +449,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: Color(0xFF262F63), width: 1),
+              borderSide: const BorderSide(color: Color(0xFF00897B), width: 1),
             ),
             contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13), // Изменено с 14 на 13
           ),
@@ -487,7 +487,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         onPressed: _isLoading || !isEnabled ? null : _register,
                       style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
-          backgroundColor: const Color(0xFF262F63), 
+          backgroundColor: const Color(0xFF00897B), 
           disabledBackgroundColor: const Color(0xFF7F8AC0),
                         foregroundColor: Colors.white,
           disabledForegroundColor: Colors.white,
@@ -669,13 +669,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
           // Вход через Яндекс OAuth
           try {
             final clientId = 'a9cf957086714d118ba498e0bbaaa430';
-            final redirectUri = 'ru.paddle.app://oauth-callback';
+            final redirectUri = 'ru.thecampus.app://oauth-callback';
 
             final oauth2Client = OAuth2Client(
               authorizeUrl: 'https://oauth.yandex.ru/authorize',
               tokenUrl: 'https://oauth.yandex.ru/token',
               redirectUri: redirectUri,
-              customUriScheme: 'ru.paddle.app',
+              customUriScheme: 'ru.thecampus.app',
             );
 
             final tokenResponse = await oauth2Client.getTokenWithAuthCodeFlow(
@@ -840,14 +840,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         const TextSpan(text: 'Регистрируясь, вы принимаете наши '),
                         TextSpan(
             text: 'Условия\nиспользования',
-            style: const TextStyle(color: Color(0xFF262F63), letterSpacing: -0.85),
+            style: const TextStyle(color: Color(0xFF00897B), letterSpacing: -0.85),
             // recognizer: TapGestureRecognizer()..onTap = () => _launchURL('...'),
                         ),
           const TextSpan(text: ' и '),
                         TextSpan(
                           text: 'Политику конфиденциальности',
-            style: const TextStyle(color: Color(0xFF262F63), letterSpacing: -0.85),
-            recognizer: TapGestureRecognizer()..onTap = () => _launchURL('https://paddle-app.ru/privacy-policy.pdf'),
+            style: const TextStyle(color: Color(0xFF00897B), letterSpacing: -0.85),
+            recognizer: TapGestureRecognizer()..onTap = () => _launchURL('https://the-campus.app/privacy-policy.pdf'),
                         ),
                         const TextSpan(text: '.'),
                       ],

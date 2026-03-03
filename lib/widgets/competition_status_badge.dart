@@ -115,7 +115,7 @@ class CompetitionStatusBadge extends StatelessWidget {
           icon: const Icon(
             Icons.cancel_outlined,
             size: 16,
-            color: Color(0xFFEC2D20),
+            color: Color(0xFFFF6B6B),
           ),
           padding: const EdgeInsets.only(left: 8, top: 8, bottom: 8, right: 12),
         );

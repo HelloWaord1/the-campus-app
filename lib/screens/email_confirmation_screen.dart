@@ -233,7 +233,7 @@ class _EmailConfirmationScreenState extends State<EmailConfirmationScreen> {
                       child: Center(
                         child: Text(
                           'Код неверный. Отправьте код и повторите попытку.',
-                          style: TextStyle(color: Color(0xFFEC2D20), fontSize: 12, letterSpacing: -0.85),
+                          style: TextStyle(color: Color(0xFFFF6B6B), fontSize: 12, letterSpacing: -0.85),
                         ),
                       ),
                     ),
@@ -245,7 +245,7 @@ class _EmailConfirmationScreenState extends State<EmailConfirmationScreen> {
                 const Center(
                   child: Padding(
                     padding: EdgeInsets.only(top: 24.0),
-                    child: CircularProgressIndicator(color: Color(0xFF262F63)),
+                    child: CircularProgressIndicator(color: Color(0xFF00897B)),
                   ),
                 ),
             ],
@@ -261,14 +261,14 @@ class _EmailConfirmationScreenState extends State<EmailConfirmationScreen> {
       child: const Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.chevron_left, color: Color(0xFF262F63)),
+          Icon(Icons.chevron_left, color: Color(0xFF00897B)),
           SizedBox(width: 8),
           Text(
             'Назад',
             style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                 letterSpacing: -0.85),
           ),
         ],
@@ -293,7 +293,7 @@ class _EmailConfirmationScreenState extends State<EmailConfirmationScreen> {
             "Запросить новый код",
             style: TextStyle(
                 fontSize: 16,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                 fontWeight: FontWeight.w500,
                 letterSpacing: -0.85),
           ),
@@ -331,13 +331,13 @@ class _EmailConfirmationScreenState extends State<EmailConfirmationScreen> {
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                      color: _hasError ? const Color(0xFFEC2D20) : Colors.transparent,
+                      color: _hasError ? const Color(0xFFFF6B6B) : Colors.transparent,
                       width: 1),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                      color: _hasError ? const Color(0xFFEC2D20) : const Color(0xFF262F63),
+                      color: _hasError ? const Color(0xFFFF6B6B) : const Color(0xFF00897B),
                       width: 1),
                 ),
                 contentPadding: const EdgeInsets.symmetric(horizontal: 17, vertical: 23),

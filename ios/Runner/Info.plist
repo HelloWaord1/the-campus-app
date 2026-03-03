@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Padel</string>
+	<string>The Campus</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>padel</string>
+	<string>The Campus</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -26,7 +26,7 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>paddle-app.ru</string>
+			<string>the-campus.app</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>https</string>
@@ -34,10 +34,10 @@
 		</dict>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>ru.paddle.app oauth</string>
+			<string>ru.thecampus.app oauth</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>ru.paddle.app</string>
+				<string>ru.thecampus.app</string>
 			</array>
 		</dict>
 		<dict>
@@ -50,10 +50,10 @@
 		</dict>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>paddle payment</string>
+			<string>thecampus payment</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>paddle</string>
+				<string>thecampus</string>
 			</array>
 		</dict>
 	</array>

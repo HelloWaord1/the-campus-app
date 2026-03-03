@@ -18,7 +18,7 @@ class AppSwitch extends StatelessWidget {
     this.trackWidth = 50,
     this.trackHeight = 30,
     this.thumbSize = 26,
-    this.activeTrackColor = const Color(0xFF262F63),
+    this.activeTrackColor = const Color(0xFF00897B),
     this.inactiveTrackColor = const Color(0xFFEDEDED),
     this.inactiveOutlineColor = const Color(0xFFE0E0E0),
     this.animationDuration = const Duration(milliseconds: 180),

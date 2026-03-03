@@ -450,7 +450,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             'Загрузить фото профиля',
             style: TextStyle(
               fontFamily: 'SF Pro Display',
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               fontSize: 16,
               fontWeight: FontWeight.w400,
               letterSpacing: -0.02,
@@ -588,7 +588,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           const SizedBox(height: 8),
           Row(
             children: [
-              Icon(Icons.check_circle, color: Color(0xFF262F63), size: 16),
+              Icon(Icons.check_circle, color: Color(0xFF00897B), size: 16),
               const SizedBox(width: 4),
               Text(
                 'Подтвержден',
@@ -596,7 +596,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   fontFamily: 'SF Pro Display',
                   fontWeight: FontWeight.w400,
                   fontSize: 12,
-                  color: Color(0xFF262F63),
+                  color: Color(0xFF00897B),
                 ),
               ),
             ],
@@ -671,7 +671,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: Color(0xFF262F63), width: 1),
+              borderSide: const BorderSide(color: Color(0xFF00897B), width: 1),
             ),
             errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
@@ -770,7 +770,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             if (states.contains(MaterialState.disabled)) {
               return const Color(0xFF7F8AC0); // неактивный = прежний активный
             }
-            return const Color(0xFF262F63); // активный
+            return const Color(0xFF00897B); // активный
           }),
           foregroundColor: MaterialStateProperty.resolveWith<Color>((states) {
             return Colors.white;
@@ -811,8 +811,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   }
 
   Widget _buildPasswordValidationBox() {
-    final Color okColor = const Color(0xFF262F63);
-    final Color errColor = const Color(0xFFEC2D20);
+    final Color okColor = const Color(0xFF00897B);
+    final Color errColor = const Color(0xFFFF6B6B);
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(

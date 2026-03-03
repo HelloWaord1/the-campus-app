@@ -441,7 +441,7 @@ class _MapPill extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: const [
-          Icon(Icons.map_outlined, size: 20, color: Color(0xFF262F63)),
+          Icon(Icons.map_outlined, size: 20, color: Color(0xFF00897B)),
           SizedBox(width: 8),
           Text(
             'Карта',
@@ -449,7 +449,7 @@ class _MapPill extends StatelessWidget {
               fontFamily: 'SF Pro Display',
               fontSize: 16,
               fontWeight: FontWeight.w500,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               letterSpacing: -0.32,
             ),
           ),
@@ -618,7 +618,7 @@ class _ActionChipPill extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
-          color: active ? const Color(0xFF262F63) : const Color(0xFFF2F2F2),
+          color: active ? const Color(0xFF00897B) : const Color(0xFFF2F2F2),
           borderRadius: BorderRadius.circular(32),
         ),
         child: Row(

@@ -269,7 +269,7 @@ class _ClubSelectionScreenState extends State<ClubSelectionScreen> {
                       child: _isLoading
                           ? const Center(
                               child: CircularProgressIndicator(
-                                color: Color(0xFF262F63),
+                                color: Color(0xFF00897B),
                               ),
                             )
                           : _filteredClubs.isEmpty
@@ -303,7 +303,7 @@ class _ClubSelectionScreenState extends State<ClubSelectionScreen> {
                                             borderRadius: BorderRadius.circular(8),
                                             border: Border.all(
                                               color: isSelected 
-                                                  ? const Color(0xFF262F63) 
+                                                  ? const Color(0xFF00897B) 
                                                   : const Color(0xFFD9D9D9),
                                               width: 1,
                                             ),
@@ -368,7 +368,7 @@ class _ClubSelectionScreenState extends State<ClubSelectionScreen> {
                             : null,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: _selectedClubId != null 
-                              ? const Color(0xFF262F63) 
+                              ? const Color(0xFF00897B) 
                               : const Color(0xFF7F8AC0),
                           foregroundColor: Colors.white,
                           elevation: 0,

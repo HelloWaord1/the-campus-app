@@ -272,7 +272,7 @@ class _ConfirmSheetContentState extends State<_ConfirmSheetContent> {
                       child: TextButton(
                         onPressed: _loading ? null : _openDispute,
                         style: TextButton.styleFrom(
-                          backgroundColor: const Color(0xFFEC2D20),
+                          backgroundColor: const Color(0xFFFF6B6B),
                           padding: const EdgeInsets.symmetric(vertical: 14.5),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
@@ -297,7 +297,7 @@ class _ConfirmSheetContentState extends State<_ConfirmSheetContent> {
                     child: TextButton(
                       onPressed: _loading ? null : _confirm,
                       style: TextButton.styleFrom(
-                        backgroundColor: const Color(0xFF262F63),
+                        backgroundColor: const Color(0xFF00897B),
                         padding: const EdgeInsets.symmetric(vertical: 14.5),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -574,7 +574,7 @@ class _DisputeScoreSheetState extends State<_DisputeScoreSheet> {
                   onPressed: (!_isFormValid || _isSubmitting) ? null : _submit,
                   style: TextButton.styleFrom(
                     backgroundColor: (_isFormValid && !_isSubmitting)
-                        ? const Color(0xFF262F63)
+                        ? const Color(0xFF00897B)
                         : const Color(0xFF7F8AC0),
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(

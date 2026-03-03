@@ -88,9 +88,9 @@ class _InviteToGameSelectMatchScreenState extends State<InviteToGameSelectMatchS
       ),
       body: RefreshIndicator(
         onRefresh: _load,
-        color: const Color(0xFF262F63),
+        color: const Color(0xFF00897B),
         child: _isLoading
-            ? const Center(child: CircularProgressIndicator(color: Color(0xFF262F63)))
+            ? const Center(child: CircularProgressIndicator(color: Color(0xFF00897B)))
             : _error != null
                 ? Center(child: Text(_error!, style: const TextStyle(color: Colors.red)))
                 : _organizerMatches.isEmpty
@@ -339,7 +339,7 @@ class _ParticipantAvatar extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xFF262F63),
+                  color: Color(0xFF00897B),
                   fontFamily: 'Basis Grotesque Arabic Pro',
                   letterSpacing: -0.28,
                 ),
@@ -366,11 +366,11 @@ class _EmptySlot extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(24),
-              border: Border.all(color: const Color(0xFF262F63), width: 1),
+              border: Border.all(color: const Color(0xFF00897B), width: 1),
             ),
             child: const Icon(
               Icons.add,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               size: 20,
             ),
           ),
@@ -380,7 +380,7 @@ class _EmptySlot extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w400,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               fontFamily: 'Basis Grotesque Arabic Pro',
               letterSpacing: -0.28,
             ),

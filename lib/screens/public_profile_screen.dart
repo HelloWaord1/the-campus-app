@@ -258,7 +258,7 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
   }
 
   Future<void> _shareProfile() async {
-    final profileUrl = 'https://paddle-app.ru/profile/${widget.userId}';
+    final profileUrl = 'https://the-campus.app/profile/${widget.userId}';
     
     try {
       await Clipboard.setData(ClipboardData(text: profileUrl));
@@ -879,14 +879,14 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
                   LineChartBarData(
                     spots: spots,
                     isCurved: false, // Ломаная линия
-                    color: const Color(0xFF262F63),
+                    color: const Color(0xFF00897B),
                     barWidth: 2,
                     dotData: FlDotData(
                       show: true,
                       getDotPainter: (spot, percent, barData, index) {
                         return FlDotCirclePainter(
                           radius: 4,
-                          color: const Color(0xFF262F63),
+                          color: const Color(0xFF00897B),
                           strokeWidth: 0,
                         );
                       },
@@ -897,8 +897,8 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          const Color(0xFF262F63).withOpacity(0.12), // чуть заметнее, как в макете
-                          const Color(0xFF262F63).withOpacity(0.0),
+                          const Color(0xFF00897B).withOpacity(0.12), // чуть заметнее, как в макете
+                          const Color(0xFF00897B).withOpacity(0.0),
                         ],
                         stops: const [0.0, 1.0],
                       ),
@@ -908,7 +908,7 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
                 lineTouchData: LineTouchData(
                   enabled: true,
                   touchTooltipData: LineTouchTooltipData(
-                    tooltipBgColor: const Color(0xFF262F63),
+                    tooltipBgColor: const Color(0xFF00897B),
                     tooltipRoundedRadius: 20,
                     getTooltipItems: (touchedSpots) {
                       return touchedSpots.map((spot) {
@@ -927,7 +927,7 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
                     return spotIndexes.map((index) {
                       return TouchedSpotIndicatorData(
                         FlLine(
-                          color: const Color(0xFF262F63),
+                          color: const Color(0xFF00897B),
                           strokeWidth: 2,
                           dashArray: [8, 8],
                         ),
@@ -952,7 +952,7 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
         border: Border.all(
-          color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+          color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
           width: isSelected ? 2 : 1,
         ),
         borderRadius: BorderRadius.circular(8),
@@ -978,7 +978,7 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
     Widget? secondaryButton;
 
     if (_friendshipStatus!.isAccepted) {
-      buttonColor = const Color(0xFFEC2D20);
+      buttonColor = const Color(0xFFFF6B6B);
       button = _buildActionButton(
         svgAsset: 'assets/images/remove_friend.svg',
         text: 'Убрать из друзей',
@@ -994,7 +994,7 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
         },
       );
     } else if (_friendshipStatus!.isSent) {
-      buttonColor = const Color(0xFFEC2D20);
+      buttonColor = const Color(0xFFFF6B6B);
       button = _buildActionButton(
         svgAsset: 'assets/images/remove_friend.svg',
         text: 'Отменить заявку',
@@ -1010,7 +1010,7 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
         },
       );
     } else if (_friendshipStatus!.isWaiting) {
-      buttonColor = const Color(0xFF262F63);
+      buttonColor = const Color(0xFF00897B);
       button = _buildActionButton(
         svgAsset: 'assets/images/add_friend.svg',
         text: 'Принять заявку в друзья',
@@ -1029,7 +1029,7 @@ class _PublicProfileScreenState extends State<PublicProfileScreen> {
       secondaryButton = _buildActionButton(
         svgAsset: 'assets/images/remove_friend.svg',
         text: 'Отклонить заявку',
-        color: const Color(0xFFEC2D20),
+        color: const Color(0xFFFF6B6B),
         onTap: () async {
           try {
             await ApiService.rejectFriendRequest(widget.userId);

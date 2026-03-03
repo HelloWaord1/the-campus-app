@@ -536,7 +536,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
                 style: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xFF262F63),
+                  color: Color(0xFF00897B),
                   fontFamily: 'Basis Grotesque Arabic Pro',
                   letterSpacing: -0.28,
                 ),
@@ -562,11 +562,11 @@ class _MatchesScreenState extends State<MatchesScreen> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(24),
-              border: Border.all(color: const Color(0xFF262F63), width: 1),
+              border: Border.all(color: const Color(0xFF00897B), width: 1),
             ),
             child: const Icon(
               Icons.add,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               size: 20,
             ),
           ),
@@ -577,7 +577,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w400,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               fontFamily: 'Basis Grotesque Arabic Pro',
               letterSpacing: -0.28,
             ),
@@ -687,7 +687,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
                                     children: const [
                                       Icon(
                                         Icons.tune,
-                                        color: Color(0xFF262F63),
+                                        color: Color(0xFF00897B),
                                         size: 24,
                                       ),
                                       SizedBox(width: 4),
@@ -696,7 +696,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
                                         style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w500,
-                                          color: Color(0xFF262F63),
+                                          color: Color(0xFF00897B),
                                           fontFamily: 'Basis Grotesque Arabic Pro',
                                           letterSpacing: -0.28,
                                         ),
@@ -735,11 +735,11 @@ class _MatchesScreenState extends State<MatchesScreen> {
                   color: const Color(0xFFF3F5F6),
                   child: RefreshIndicator(
                     onRefresh: _loadMatches,
-                    color: const Color(0xFF262F63),
+                    color: const Color(0xFF00897B),
                     child: _isLoading
                         ? const Center(
                             child: CircularProgressIndicator(
-                              color: Color(0xFF262F63),
+                              color: Color(0xFF00897B),
                             ),
                           )
                         : _hasError
@@ -765,7 +765,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
                                     ElevatedButton(
                                       onPressed: _loadMatches,
                                       style: ElevatedButton.styleFrom(
-                                        backgroundColor: const Color(0xFF262F63),
+                                        backgroundColor: const Color(0xFF00897B),
                                         foregroundColor: Colors.white,
                                       ),
                                       child: const Text('Повторить'),
@@ -868,7 +868,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
               ).then((_) => _loadMatches());
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF262F63),
+              backgroundColor: const Color(0xFF00897B),
               foregroundColor: Colors.white,
               elevation: 0,
               padding: const EdgeInsets.symmetric(horizontal: 16),

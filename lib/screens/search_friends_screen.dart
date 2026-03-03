@@ -203,7 +203,7 @@ class _SearchFriendsScreenState extends State<SearchFriendsScreen> {
                               child: Row(
                                 children: [
                                   SizedBox(width: 16),
-                                  Icon(Icons.person_search_outlined, color: Color(0xFF262F63)),
+                                  Icon(Icons.person_search_outlined, color: Color(0xFF00897B)),
                                   SizedBox(width: 12),
                                   Text(
                                     'Посмотреть профиль',
@@ -235,7 +235,7 @@ class _SearchFriendsScreenState extends State<SearchFriendsScreen> {
                               child: Row(
                                 children: [
                                   SizedBox(width: 16),
-                                  Icon(Icons.person_add_alt_1_outlined, color: Color(0xFF262F63)),
+                                  Icon(Icons.person_add_alt_1_outlined, color: Color(0xFF00897B)),
                                   SizedBox(width: 12),
                                   Text(
                                     'Отправить запрос дружбы',

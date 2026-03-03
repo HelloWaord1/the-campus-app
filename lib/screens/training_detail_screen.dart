@@ -305,7 +305,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
   }
 
   Future<void> _shareTraining() async {
-    final trainingUrl = 'https://paddle-app.ru/training/${widget.trainingId}';
+    final trainingUrl = 'https://the-campus.app/training/${widget.trainingId}';
     
     try {
       await Clipboard.setData(ClipboardData(text: trainingUrl));
@@ -384,7 +384,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xFF262F63),
+                  color: Color(0xFF00897B),
                 ),
               ),
             ),
@@ -566,9 +566,9 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
     //   return Container(
     //     padding: const EdgeInsets.fromLTRB(12, 7.5, 16, 8),
     //     decoration: BoxDecoration(
-    //       color: const Color(0xFFEC2D20).withOpacity(0.05),
+    //       color: const Color(0xFFFF6B6B).withOpacity(0.05),
     //       border: Border.all(
-    //         color: const Color(0xFFEC2D20).withOpacity(0.2),
+    //         color: const Color(0xFFFF6B6B).withOpacity(0.2),
     //         width: 1,
     //       ),
     //       borderRadius: BorderRadius.circular(20),
@@ -580,7 +580,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
     //           width: 8,
     //           height: 8,
     //           decoration: const BoxDecoration(
-    //             color: Color(0xFFEC2D20),
+    //             color: Color(0xFFFF6B6B),
     //             shape: BoxShape.circle,
     //           ),
     //         ),
@@ -606,9 +606,9 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
       return Container(
         padding: const EdgeInsets.fromLTRB(12, 7.5, 16, 8),
         decoration: BoxDecoration(
-          color: const Color(0xFFEC2D20).withOpacity(0.05),
+          color: const Color(0xFFFF6B6B).withOpacity(0.05),
           border: Border.all(
-            color: const Color(0xFFEC2D20).withOpacity(0.2),
+            color: const Color(0xFFFF6B6B).withOpacity(0.2),
             width: 1,
           ),
           borderRadius: BorderRadius.circular(20),
@@ -620,7 +620,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
               width: 8,
               height: 8,
               decoration: const BoxDecoration(
-                color: Color(0xFFEC2D20),
+                color: Color(0xFFFF6B6B),
                 shape: BoxShape.circle,
               ),
             ),
@@ -800,7 +800,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
                       child: const Text(
                       'Добавить в календарь',
                       style: TextStyle(
-                        color: Color(0xFF262F63),
+                        color: Color(0xFF00897B),
                           fontSize: 14,
                         fontWeight: FontWeight.w500,
                         fontFamily: 'SF Pro Display',
@@ -913,7 +913,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
                 child: Container(
                   padding: const EdgeInsets.all(4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF262F63),
+                    color: const Color(0xFF00897B),
                     border: Border.all(color: Colors.white, width: 2),
                     borderRadius: BorderRadius.circular(16),
                   ),
@@ -1009,7 +1009,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
                 child: const Text(
               'Смотреть все',
               style: TextStyle(
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                     fontSize: 16,
                 fontWeight: FontWeight.w400,
                 fontFamily: 'SF Pro Display',
@@ -1088,7 +1088,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
                     width: 358 * (_training!.currentParticipants / _training!.maxParticipants),
                     height: 4,
                     decoration: BoxDecoration(
-                      color: const Color(0xFF262F63),
+                      color: const Color(0xFF00897B),
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),
@@ -1160,7 +1160,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
                      ? 'С ${calculateRating(participant!.rating!).toStringAsFixed(2)}'
                      : '',
                  style: const TextStyle(
-                   color: Color(0xFF262F63),
+                   color: Color(0xFF00897B),
                    fontSize: 14,
                    fontWeight: FontWeight.w500,
                    fontFamily: 'SF Pro Display',
@@ -1220,7 +1220,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
     
     if (!_training!.hasSpots) {
       // Нет мест
-      buttonColor = const Color(0xFF262F63);
+      buttonColor = const Color(0xFF00897B);
       textColor = const Color(0xFFFFFFFF);
       buttonText = 'Участвовать ${_formatPrice(_training!.price)}₽';
       onPressed = null;
@@ -1232,7 +1232,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
       onPressed = _showRatingMismatchModal;
     } else {
       // Можно участвовать
-      buttonColor = const Color(0xFF262F63);
+      buttonColor = const Color(0xFF00897B);
       textColor = const Color(0xFFFFFFFF);
       buttonText = 'Участвовать ${_formatPrice(_training!.price)}₽';
       onPressed = _joinTraining;
@@ -1282,7 +1282,7 @@ class _TrainingDetailScreenState extends State<TrainingDetailScreen> {
         child: const Text(
           'Отменить участие',
           style: TextStyle(
-            color: Color(0xFFEC2D20),
+            color: Color(0xFFFF6B6B),
             fontSize: 16,
             fontWeight: FontWeight.w500,
             fontFamily: 'SF Pro Display',

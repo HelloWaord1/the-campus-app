@@ -465,7 +465,7 @@ class _ClubsMapScreenState extends State<ClubsMapScreen> {
                               width: double.infinity,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFF262F63),
+                                  backgroundColor: const Color(0xFF00897B),
                                   foregroundColor: Colors.white,
                                   padding: const EdgeInsets.symmetric(vertical: 12),
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -652,7 +652,7 @@ class _ListPill extends StatelessWidget {
             'assets/images/list_clubs.svg',
             width: 16,
             height: 16,
-            colorFilter: const ColorFilter.mode(Color(0xFF262F63), BlendMode.srcIn),
+            colorFilter: const ColorFilter.mode(Color(0xFF00897B), BlendMode.srcIn),
           ),
           const SizedBox(width: 8),
           const Text(
@@ -661,7 +661,7 @@ class _ListPill extends StatelessWidget {
               fontFamily: 'SF Pro Display',
               fontSize: 16,
               fontWeight: FontWeight.w500,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               letterSpacing: -0.32,
             ),
           ),
@@ -827,7 +827,7 @@ class _ActionChipPill extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
-          color: active ? const Color(0xFF262F63) : const Color(0xFFF2F2F2),
+          color: active ? const Color(0xFF00897B) : const Color(0xFFF2F2F2),
           borderRadius: BorderRadius.circular(32),
         ),
         child: Row(

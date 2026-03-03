@@ -327,7 +327,7 @@ class _MatchFiltersScreenState extends State<MatchFiltersScreen> {
                               const Center(
                                 child: Padding(
                                   padding: EdgeInsets.all(20),
-                                  child: CircularProgressIndicator(color: Color(0xFF262F63)),
+                                  child: CircularProgressIndicator(color: Color(0xFF00897B)),
                                 ),
                               )
                             else
@@ -359,7 +359,7 @@ class _MatchFiltersScreenState extends State<MatchFiltersScreen> {
                                           color: Colors.white,
                                           borderRadius: BorderRadius.circular(8),
                                           border: Border.all(
-                                            color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+                                            color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
                                             width: isSelected ? 2 : 1,
                                           ),
                                         ),
@@ -465,7 +465,7 @@ class _MatchFiltersScreenState extends State<MatchFiltersScreen> {
                                           width: 48,
                                           height: 48,
                                           decoration: BoxDecoration(
-                                            color: isSelected ? const Color(0xFF262F63) : const Color(0xFFF5F5F5),
+                                            color: isSelected ? const Color(0xFF00897B) : const Color(0xFFF5F5F5),
                                             borderRadius: BorderRadius.circular(32),
                                           ),
                                           child: Center(
@@ -543,7 +543,7 @@ class _MatchFiltersScreenState extends State<MatchFiltersScreen> {
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
                                           border: Border.all(
-                                            color: isSelected ? const Color(0xFF262F63) : const Color(0xFF89867E),
+                                            color: isSelected ? const Color(0xFF00897B) : const Color(0xFF89867E),
                                             width: 2,
                                           ),
                                         ),
@@ -553,7 +553,7 @@ class _MatchFiltersScreenState extends State<MatchFiltersScreen> {
                                                   width: 12,
                                                   height: 12,
                                                   decoration: const BoxDecoration(
-                                                    color: Color(0xFF262F63),
+                                                    color: Color(0xFF00897B),
                                                     shape: BoxShape.circle,
                                                   ),
                                                 ),
@@ -597,7 +597,7 @@ class _MatchFiltersScreenState extends State<MatchFiltersScreen> {
                   child: ElevatedButton(
                     onPressed: _applyFilters,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF262F63),
+                      backgroundColor: const Color(0xFF00897B),
                       foregroundColor: Colors.white,
                       elevation: 0,
                       shape: RoundedRectangleBorder(

@@ -103,7 +103,7 @@ class _CompetitionsScreenState extends State<CompetitionsScreen> with SingleTick
                 isScrollable: false,
                 indicatorSize: TabBarIndicatorSize.tab,
                 indicator: const UnderlineTabIndicator(
-                  borderSide: BorderSide(color: Color(0xFF262F63), width: 2),
+                  borderSide: BorderSide(color: Color(0xFF00897B), width: 2),
                 ),
                 labelColor: const Color(0xFF222223),
                 unselectedLabelColor: Color(0xFF89867E),
@@ -327,7 +327,7 @@ class _CompetitionsListState extends State<_CompetitionsList> with AutomaticKeep
                   child: ElevatedButton(
                     onPressed: widget.onSeeAvailable,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF262F63),
+                      backgroundColor: const Color(0xFF00897B),
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                       padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
@@ -386,7 +386,7 @@ class _CompetitionsListState extends State<_CompetitionsList> with AutomaticKeep
                   child: ElevatedButton(
                     onPressed: _openFilters,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF262F63),
+                      backgroundColor: const Color(0xFF00897B),
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),

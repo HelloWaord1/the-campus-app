@@ -509,7 +509,7 @@ class _InviteUsersScreenState extends State<InviteUsersScreen> with SingleTicker
   Widget _buildFriendsTab() {
     if (_isLoadingFriends) {
       return const Center(
-        child: CircularProgressIndicator(color: Color(0xFF262F63)),
+        child: CircularProgressIndicator(color: Color(0xFF00897B)),
       );
     }
 
@@ -532,7 +532,7 @@ class _InviteUsersScreenState extends State<InviteUsersScreen> with SingleTicker
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF262F63),
+                  color: const Color(0xFF00897B),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: const Text(
@@ -581,7 +581,7 @@ class _InviteUsersScreenState extends State<InviteUsersScreen> with SingleTicker
   Widget _buildSearchContent() {
     if (_isSearching) {
       return const Center(
-        child: CircularProgressIndicator(color: Color(0xFF262F63)),
+        child: CircularProgressIndicator(color: Color(0xFF00897B)),
       );
     }
 
@@ -603,7 +603,7 @@ class _InviteUsersScreenState extends State<InviteUsersScreen> with SingleTicker
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF262F63),
+                    color: const Color(0xFF00897B),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Text(
@@ -727,7 +727,7 @@ class _InviteUsersScreenState extends State<InviteUsersScreen> with SingleTicker
               height: 24,
               padding: const EdgeInsets.symmetric(horizontal: 12),
               decoration: BoxDecoration(
-                color: isInvited || isInviting ? Colors.grey : const Color(0xFF262F63),
+                color: isInvited || isInviting ? Colors.grey : const Color(0xFF00897B),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
@@ -816,7 +816,7 @@ class _InviteUsersScreenState extends State<InviteUsersScreen> with SingleTicker
               height: 24,
               padding: const EdgeInsets.symmetric(horizontal: 12),
               decoration: BoxDecoration(
-                color: isInvited || isInviting ? Colors.grey : const Color(0xFF262F63),
+                color: isInvited || isInviting ? Colors.grey : const Color(0xFF00897B),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(

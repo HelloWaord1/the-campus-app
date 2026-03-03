@@ -361,8 +361,8 @@ class _ClubFiltersModalState extends State<ClubFiltersModal> {
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   decoration: BoxDecoration(
                     color: _canApply
-                        ? const Color(0xFF262F63)
-                        : const Color(0xFF262F63).withOpacity(0.5),
+                        ? const Color(0xFF00897B)
+                        : const Color(0xFF00897B).withOpacity(0.5),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(
@@ -405,7 +405,7 @@ class _ChipSelect extends StatelessWidget {
         padding: EdgeInsets.zero,
         decoration: BoxDecoration(
           border: Border.all(
-            color: selected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+            color: selected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
             width: selected ? 2 : 1,
           ),
           borderRadius: BorderRadius.circular(8),
@@ -531,9 +531,9 @@ class _DistanceSlider extends StatelessWidget {
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
               trackHeight: 4,
-              activeTrackColor: const Color(0xFF262F63),
+              activeTrackColor: const Color(0xFF00897B),
               inactiveTrackColor: const Color(0xFFE0E0E0),
-              thumbColor: const Color(0xFF262F63),
+              thumbColor: const Color(0xFF00897B),
               overlayColor: Colors.transparent,
               thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 10),
               trackShape: const _FullWidthSliderTrackShape(),

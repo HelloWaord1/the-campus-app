@@ -111,7 +111,7 @@ class _CustomTimePickerDialogState extends State<_CustomTimePickerDialog> {
                     if (states.contains(MaterialState.disabled)) {
                       return const Color(0xFF7F8AC0);
                     }
-                    return const Color(0xFF262F63);
+                    return const Color(0xFF00897B);
                   }),
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
                   elevation: MaterialStateProperty.all(0),
@@ -153,7 +153,7 @@ class _CustomTimePickerDialogState extends State<_CustomTimePickerDialog> {
                 height: 56,
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+                    color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
                     width: isSelected ? 2 : 1,
                   ),
                   borderRadius: BorderRadius.circular(8),

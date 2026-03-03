@@ -176,7 +176,7 @@ class _CitySelectionScreenState extends State<CitySelectionScreen> {
                 child: _isLoading
                     ? const Center(
                         child: CircularProgressIndicator(
-                          color: Color(0xFF262F63),
+                          color: Color(0xFF00897B),
                         ),
                       )
                     : ListView.builder(
@@ -201,7 +201,7 @@ class _CitySelectionScreenState extends State<CitySelectionScreen> {
                                       shape: BoxShape.circle,
                                       border: Border.all(
                                         color: isSelected 
-                                            ? const Color(0xFF262F63) 
+                                            ? const Color(0xFF00897B) 
                                             : const Color(0xFF89867E),
                                         width: 2,
                                       ),
@@ -212,7 +212,7 @@ class _CitySelectionScreenState extends State<CitySelectionScreen> {
                                               width: 12,
                                               height: 12,
                                               decoration: const BoxDecoration(
-                                                color: Color(0xFF262F63),
+                                                color: Color(0xFF00897B),
                                                 shape: BoxShape.circle,
                                               ),
                                             ),

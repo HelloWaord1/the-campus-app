@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <application
-        android:label="padel"
+        android:label="The Campus"
         android:name=".MainApplication"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id"
@@ -41,133 +41,133 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="ru.paddle.app" android:host="oauth-callback" />
+                <data android:scheme="ru.thecampus.app" android:host="oauth-callback" />
             </intent-filter>
-            <!-- Для перехвата глубоких ссылок paddle-app.ru (исключая /info) -->
+            <!-- Для перехвата глубоких ссылок the-campus.app (исключая /info) -->
             <!-- Match links -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="paddle-app.ru" android:pathPrefix="/match/" />
+                <data android:scheme="https" android:host="the-campus.app" android:pathPrefix="/match/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="www.paddle-app.ru" android:pathPrefix="/match/" />
+                <data android:scheme="https" android:host="www.the-campus.app" android:pathPrefix="/match/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="paddle-app.ru" android:pathPrefix="/match/" />
+                <data android:scheme="http" android:host="the-campus.app" android:pathPrefix="/match/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="www.paddle-app.ru" android:pathPrefix="/match/" />
+                <data android:scheme="http" android:host="www.the-campus.app" android:pathPrefix="/match/" />
             </intent-filter>
             <!-- Profile links -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="paddle-app.ru" android:pathPrefix="/profile/" />
+                <data android:scheme="https" android:host="the-campus.app" android:pathPrefix="/profile/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="www.paddle-app.ru" android:pathPrefix="/profile/" />
+                <data android:scheme="https" android:host="www.the-campus.app" android:pathPrefix="/profile/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="paddle-app.ru" android:pathPrefix="/profile/" />
+                <data android:scheme="http" android:host="the-campus.app" android:pathPrefix="/profile/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="www.paddle-app.ru" android:pathPrefix="/profile/" />
+                <data android:scheme="http" android:host="www.the-campus.app" android:pathPrefix="/profile/" />
             </intent-filter>
             <!-- Club links -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="paddle-app.ru" android:pathPrefix="/club/" />
+                <data android:scheme="https" android:host="the-campus.app" android:pathPrefix="/club/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="www.paddle-app.ru" android:pathPrefix="/club/" />
+                <data android:scheme="https" android:host="www.the-campus.app" android:pathPrefix="/club/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="paddle-app.ru" android:pathPrefix="/club/" />
+                <data android:scheme="http" android:host="the-campus.app" android:pathPrefix="/club/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="www.paddle-app.ru" android:pathPrefix="/club/" />
+                <data android:scheme="http" android:host="www.the-campus.app" android:pathPrefix="/club/" />
             </intent-filter>
             <!-- Competition links -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="paddle-app.ru" android:pathPrefix="/competition/" />
+                <data android:scheme="https" android:host="the-campus.app" android:pathPrefix="/competition/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="www.paddle-app.ru" android:pathPrefix="/competition/" />
+                <data android:scheme="https" android:host="www.the-campus.app" android:pathPrefix="/competition/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="paddle-app.ru" android:pathPrefix="/competition/" />
+                <data android:scheme="http" android:host="the-campus.app" android:pathPrefix="/competition/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="www.paddle-app.ru" android:pathPrefix="/competition/" />
+                <data android:scheme="http" android:host="www.the-campus.app" android:pathPrefix="/competition/" />
             </intent-filter>
             <!-- Training links -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="paddle-app.ru" android:pathPrefix="/training/" />
+                <data android:scheme="https" android:host="the-campus.app" android:pathPrefix="/training/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="www.paddle-app.ru" android:pathPrefix="/training/" />
+                <data android:scheme="https" android:host="www.the-campus.app" android:pathPrefix="/training/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="paddle-app.ru" android:pathPrefix="/training/" />
+                <data android:scheme="http" android:host="the-campus.app" android:pathPrefix="/training/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="www.paddle-app.ru" android:pathPrefix="/training/" />
+                <data android:scheme="http" android:host="www.the-campus.app" android:pathPrefix="/training/" />
             </intent-filter>
             
             <!-- Deep link схема для возврата из оплаты ЮКассы -->
@@ -175,7 +175,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="paddle" />
+                <data android:scheme="thecampus" />
             </intent-filter>
 
             <!-- Для обработки клика по уведомлению FCM -->
@@ -194,7 +194,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <!-- Ограничиваем только под путь oauth-редиректа, чтобы не перехватывать диплинки -->
-                <data android:scheme="https" android:host="paddle-app.ru" android:path="/vk_id_redirect" />
+                <data android:scheme="https" android:host="the-campus.app" android:path="/vk_id_redirect" />
             </intent-filter>
         </activity>
         <!-- UCropActivity для image_cropper -->

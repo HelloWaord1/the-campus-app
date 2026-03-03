@@ -17,10 +17,10 @@ import '../models/training.dart';
 import '../models/court.dart';
 
 class ApiService {
-  // Для продакшена: 'https://paddle-app.ru'
+  // Для продакшена: 'https://the-campus.app'
   // Для локальной разработки на iOS симуляторе: 'http://localhost:8000'
   // Для локальной разработки на Android эмуляторе: 'http://10.0.2.2:8000'
-  static const String baseUrl = 'https://paddle-app.ru';
+  static const String baseUrl = 'https://the-campus.app';
   //static const String baseUrl = 'http://localhost:8000';
 
   static Future<void> _handleUnauthorized() async {

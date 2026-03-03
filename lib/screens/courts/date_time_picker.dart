@@ -154,7 +154,7 @@ class _CustomDatePickerDialogState extends State<_CustomDatePickerDialog> {
                     if (states.contains(MaterialState.disabled)) {
                       return const Color(0xFF7F8AC0);
                     }
-                    return const Color(0xFF262F63);
+                    return const Color(0xFF00897B);
                   }),
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
                   elevation: MaterialStateProperty.all(0),
@@ -217,7 +217,7 @@ class _CustomDatePickerDialogState extends State<_CustomDatePickerDialog> {
                     width: 40,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: isSelected ? const Color(0xFF262F63) : Colors.transparent,
+                      color: isSelected ? const Color(0xFF00897B) : Colors.transparent,
                       borderRadius: BorderRadius.circular(isSelected ? 8 : 20),
                       border: isToday && !isSelected
                           ? Border.all(color: const Color(0xFF6750A4), width: 1)

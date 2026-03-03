@@ -186,7 +186,7 @@ class _CustomTimePickerSheetState extends State<CustomTimePickerSheet> {
           color: Colors.white,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
-            color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+            color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
             width: isSelected ? 2.0 : 1.0,
           ),
         ),
@@ -209,7 +209,7 @@ class _CustomTimePickerSheetState extends State<CustomTimePickerSheet> {
   Widget _buildDoneButton() {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: const Color(0xFF262F63),
+        backgroundColor: const Color(0xFF00897B),
         minimumSize: const Size(double.infinity, 48),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),

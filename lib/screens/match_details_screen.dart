@@ -802,7 +802,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
   }
 
   Future<void> _shareMatch() async {
-    final matchUrl = 'https://paddle-app.ru/match/${widget.matchId}';
+    final matchUrl = 'https://the-campus.app/match/${widget.matchId}';
     
     try {
       await Clipboard.setData(ClipboardData(text: matchUrl));
@@ -1001,7 +1001,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFF262F63), width: 2),
+        border: Border.all(color: const Color(0xFF00897B), width: 2),
       ),
       child: Builder(
         builder: (context) {
@@ -1054,13 +1054,13 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Icon(Icons.check_circle, color: Color(0xFF262F63), size: 24),
+          const Icon(Icons.check_circle, color: Color(0xFF00897B), size: 24),
           const SizedBox(width: 6),
           const Text(
             'Корт забронирован',
             style: TextStyle(
               fontFamily: 'SF Pro Display',
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               fontSize: 16,
               fontWeight: FontWeight.w400,
               letterSpacing: -0.32,
@@ -1107,7 +1107,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
       return const Scaffold(
         backgroundColor: Colors.white,
         body: Center(
-          child: CircularProgressIndicator(color: Color(0xFF262F63)),
+          child: CircularProgressIndicator(color: Color(0xFF00897B)),
         ),
       );
     }
@@ -1320,7 +1320,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                                           fontSize: 24,
                                           height: 1.0,
                                           letterSpacing: -0.32,
-                                          color: Color(0xFF262F63),
+                                          color: Color(0xFF00897B),
                                         ),
                                       ),
                                     ),
@@ -1335,7 +1335,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                                           fontSize: 24,
                                           height: 1.0,
                                           letterSpacing: -0.32,
-                                          color: Color(0xFF262F63),
+                                          color: Color(0xFF00897B),
                                         ),
                                       ),
                                     ),
@@ -1432,7 +1432,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                               fontSize: 24,
                               height: 1.0,
                               letterSpacing: -0.32,
-                              color: Color(0xFF262F63),
+                              color: Color(0xFF00897B),
                             ),
                           ),
                         ),
@@ -1447,7 +1447,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                               fontSize: 24,
                               height: 1.0,
                               letterSpacing: -0.32,
-                              color: Color(0xFF262F63),
+                              color: Color(0xFF00897B),
                             ),
                           ),
                         ),
@@ -1581,7 +1581,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
               child: Container(
                 color: Colors.black.withOpacity(0.1),
                 child: const Center(
-                  child: CircularProgressIndicator(color: Color(0xFF262F63)),
+                  child: CircularProgressIndicator(color: Color(0xFF00897B)),
                 ),
               ),
             ),
@@ -1750,7 +1750,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
       child: TextButton(
         onPressed: onPressed,
         style: TextButton.styleFrom(
-          backgroundColor: const Color(0xFF262F63),
+          backgroundColor: const Color(0xFF00897B),
           padding: const EdgeInsets.symmetric(vertical: 14.5),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -2188,7 +2188,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                       child: TextButton(
                         onPressed: isSubmitting ? null : submit,
                         style: TextButton.styleFrom(
-                          backgroundColor: const Color(0xFF262F63),
+                          backgroundColor: const Color(0xFF00897B),
                           padding: const EdgeInsets.symmetric(vertical: 14),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
@@ -2466,7 +2466,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                               width: 32,
                               height: 32,
                               decoration: const BoxDecoration(
-                                color: Color(0xFF262F63),
+                                color: Color(0xFF00897B),
                                 shape: BoxShape.circle,
                               ),
                               child: Center(
@@ -2530,7 +2530,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                               width: 32,
                               height: 32,
                               decoration: const BoxDecoration(
-                                color: Color(0xFF262F63),
+                                color: Color(0xFF00897B),
                                 shape: BoxShape.circle,
                               ),
                               child: Center(
@@ -2716,7 +2716,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
             style: TextButton.styleFrom(
               backgroundColor: _isMatchFinished
                   ? const Color(0xFFF7F7F7)
-                  : const Color(0xFFEC2D20),
+                  : const Color(0xFFFF6B6B),
               padding: const EdgeInsets.symmetric(vertical: 13),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -2848,12 +2848,12 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                 height: 48,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  border: Border.all(color: Color(0xFF262F63), width: 1),
+                  border: Border.all(color: Color(0xFF00897B), width: 1),
                   color: Colors.white,
                 ),
                 child: Icon(
                   Icons.add,
-                  color: Color(0xFF262F63),
+                  color: Color(0xFF00897B),
                   size: 24,
                 ),
               ),
@@ -2866,7 +2866,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                   fontSize: 14,
                   height: 1.286,
                   letterSpacing: -0.28,
-                  color: Color(0xFF262F63),
+                  color: Color(0xFF00897B),
                 ),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
@@ -2936,7 +2936,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                   fontSize: 14,
                   height: 1.1,
                   letterSpacing: -0.28,
-                  color: Color(0xFF262F63),
+                  color: Color(0xFF00897B),
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -3017,7 +3017,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                   fontSize: 14,
                   height: 1.1,
                   letterSpacing: -0.28,
-                  color: Color(0xFF262F63),
+                  color: Color(0xFF00897B),
                 ),
                 textAlign: TextAlign.center,
               ),

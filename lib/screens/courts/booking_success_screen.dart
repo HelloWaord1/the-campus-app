@@ -169,7 +169,7 @@ class _BookingSuccessScreenState extends State<BookingSuccessScreen> {
             Icon(
               isActive ? activeIcon : icon,
               size: 24,
-              color: isActive ? const Color(0xFF262F63) : const Color(0xFF89867E),
+              color: isActive ? const Color(0xFF00897B) : const Color(0xFF89867E),
             ),
             const SizedBox(height: 4),
             Text(
@@ -177,7 +177,7 @@ class _BookingSuccessScreenState extends State<BookingSuccessScreen> {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: isActive ? FontWeight.w600 : FontWeight.w400,
-                color: isActive ? const Color(0xFF262F63) : const Color(0xFF89867E),
+                color: isActive ? const Color(0xFF00897B) : const Color(0xFF89867E),
               ),
             ),
           ],
@@ -309,7 +309,7 @@ class _BookingSuccessScreenState extends State<BookingSuccessScreen> {
                                       width: 20,
                                       height: 20,
                                       decoration: const BoxDecoration(
-                                        color: Color(0xFF262F63),
+                                        color: Color(0xFF00897B),
                                         shape: BoxShape.circle,
                                       ),
                                       child: const Icon(
@@ -505,7 +505,7 @@ class _BookingSuccessScreenState extends State<BookingSuccessScreen> {
                                       fontWeight: FontWeight.w500,
                                       color: _isCancelling 
                                           ? const Color(0xFF79766E)
-                                          : const Color(0xFFEC2D20),
+                                          : const Color(0xFFFF6B6B),
                                       letterSpacing: -0.32,
                                     ),
                                   ),
@@ -685,7 +685,7 @@ class _BookingSuccessScreenState extends State<BookingSuccessScreen> {
                           width: double.infinity,
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
-                            color: const Color(0xFFEC2D20),
+                            color: const Color(0xFFFF6B6B),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: const Text(

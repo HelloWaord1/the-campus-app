@@ -158,7 +158,7 @@ class _AllPastMatchesScreenState extends State<AllPastMatchesScreen> {
           color: Colors.transparent,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
-            color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+            color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
             width: isSelected ? 2 : 1,
           ),
         ),

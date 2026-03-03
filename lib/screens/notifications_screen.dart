@@ -208,7 +208,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
     return Stack(
       children: [
         RefreshIndicator(
-          color: const Color(0xFF262F63),
+          color: const Color(0xFF00897B),
           onRefresh: _loadNotifications,
           child: ListView.builder(
             padding: const EdgeInsets.fromLTRB(16, 24, 16, 120), // место под кнопку
@@ -283,7 +283,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                     }
                   : null,
               style: ElevatedButton.styleFrom(
-                backgroundColor: hasUnread ? const Color(0xFF262F63) : const Color(0xFF7F8AC0),
+                backgroundColor: hasUnread ? const Color(0xFF00897B) : const Color(0xFF7F8AC0),
                 foregroundColor: Colors.white,
                 disabledBackgroundColor: const Color(0xFF7F8AC0),
                 disabledForegroundColor: Colors.white,
@@ -533,7 +533,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                       width: 10,
                       height: 10,
                       decoration: BoxDecoration(
-                        color: const Color(0xFFEC2D20),
+                        color: const Color(0xFFFF6B6B),
                         shape: BoxShape.circle,
                         border: Border.all(color: Colors.white, width: 1),
                       ),

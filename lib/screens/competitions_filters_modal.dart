@@ -216,7 +216,7 @@ class _CompetitionsFiltersModalState extends State<CompetitionsFiltersModal> {
                                     width: 46,
                                     height: 46,
                                     decoration: BoxDecoration(
-                                      color: isSelected ? const Color(0xFF262F63) : const Color(0xFFF5F5F5),
+                                      color: isSelected ? const Color(0xFF00897B) : const Color(0xFFF5F5F5),
                                       borderRadius: BorderRadius.circular(32),
                                     ),
                                     child: Center(
@@ -295,7 +295,7 @@ class _CompetitionsFiltersModalState extends State<CompetitionsFiltersModal> {
                           child: Container(
                             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                             decoration: BoxDecoration(
-                              color: _filters.nearMe ? const Color(0xFF262F63) : const Color(0xFFF2F2F2),
+                              color: _filters.nearMe ? const Color(0xFF00897B) : const Color(0xFFF2F2F2),
                               borderRadius: BorderRadius.circular(32),
                             ),
                             child: Row(
@@ -379,7 +379,7 @@ class _CompetitionsFiltersModalState extends State<CompetitionsFiltersModal> {
                   width: double.infinity,
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF262F63),
+                    color: const Color(0xFF00897B),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const Text(
@@ -415,7 +415,7 @@ class _ChipSelect extends StatelessWidget {
         height: height ?? 36,
         padding: const EdgeInsets.symmetric(horizontal: 12),
         decoration: BoxDecoration(
-          border: Border.all(color: selected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9), width: selected ? 2 : 1),
+          border: Border.all(color: selected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9), width: selected ? 2 : 1),
           borderRadius: BorderRadius.circular(8),
           color: Colors.white,
         ),
@@ -524,9 +524,9 @@ class _DistanceSlider extends StatelessWidget {
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
               trackHeight: 2,
-              activeTrackColor: const Color(0xFF262F63),
+              activeTrackColor: const Color(0xFF00897B),
               inactiveTrackColor: const Color(0xFFE0E0E0),
-              thumbColor: const Color(0xFF262F63),
+              thumbColor: const Color(0xFF00897B),
               overlayColor: Colors.transparent,
               thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 10),
               trackShape: const _FullWidthSliderTrackShape(),

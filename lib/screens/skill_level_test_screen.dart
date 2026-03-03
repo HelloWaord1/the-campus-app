@@ -88,7 +88,7 @@ class SkillLevelTestScreen extends StatelessWidget {
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF262F63),
+                  backgroundColor: const Color(0xFF00897B),
                   minimumSize: const Size.fromHeight(50),
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -289,7 +289,7 @@ class _SkillLevelQuestionScreenState extends State<SkillLevelQuestionScreen> {
         // Регистрация стандартным путём через /api/register/email с данными профиля VK
         final firstName = widget.registrationData?['vk_first_name'] as String? ?? 'Пользователь';
         final lastName = widget.registrationData?['vk_last_name'] as String? ?? '';
-        final email = widget.registrationData?['vk_email'] as String? ?? 'user_${DateTime.now().millisecondsSinceEpoch}@paddle-app.ru';
+        final email = widget.registrationData?['vk_email'] as String? ?? 'user_${DateTime.now().millisecondsSinceEpoch}@the-campus.app';
         final phone = widget.registrationData?['vk_phone'] as String?;
         // final avatarUrl = widget.registrationData?['vk_avatar_url'] as String?; // пока не используется на бэке
         final password = 'vk_${DateTime.now().millisecondsSinceEpoch}';
@@ -317,7 +317,7 @@ class _SkillLevelQuestionScreenState extends State<SkillLevelQuestionScreen> {
         // Регистрация по переданному профилю VK через /api/register/email
         final firstName = widget.registrationData?['vk_first_name'] as String? ?? 'Пользователь';
         final lastName = widget.registrationData?['vk_last_name'] as String? ?? '';
-        final email = widget.registrationData?['vk_email'] as String? ?? 'user_${DateTime.now().millisecondsSinceEpoch}@paddle-app.ru';
+        final email = widget.registrationData?['vk_email'] as String? ?? 'user_${DateTime.now().millisecondsSinceEpoch}@the-campus.app';
         final phone = widget.registrationData?['vk_phone'] as String?;
         final password = 'vk_${DateTime.now().millisecondsSinceEpoch}';
 
@@ -351,7 +351,7 @@ class _SkillLevelQuestionScreenState extends State<SkillLevelQuestionScreen> {
         final appleEmail = widget.registrationData!['apple_email'] as String?;
         final String effectiveEmail = (appleEmail != null && appleEmail.isNotEmpty)
             ? appleEmail
-            : 'user_${DateTime.now().millisecondsSinceEpoch}@paddle-app.ru';
+            : 'user_${DateTime.now().millisecondsSinceEpoch}@the-campus.app';
 
         final authResponse = await ApiService.appleRegister(
           idToken: idToken,
@@ -643,7 +643,7 @@ class _LevelTestQuestionView extends StatelessWidget {
                 fontFamily: 'SF Pro Display',
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                 letterSpacing: -0.85,
               ),
             ),
@@ -736,7 +736,7 @@ class _LevelTestFinalView extends StatelessWidget {
                       fontFamily: 'SF Pro Display',
                       fontSize: 64,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                       height: 0.5, // Визуальная коррекция для выравнивания
                       letterSpacing: -0.85,
                     ),
@@ -748,7 +748,7 @@ class _LevelTestFinalView extends StatelessWidget {
                       fontFamily: 'SF Pro Display',
                       fontSize: 64,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                       height: 0.5, // Визуальная коррекция для выравнивания
                       letterSpacing: -0.85,
                     ),
@@ -797,7 +797,7 @@ class _LevelTestFinalView extends StatelessWidget {
                 fontFamily: 'SF Pro Display',
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                 letterSpacing: -0.85,
               ),
             ),
@@ -828,7 +828,7 @@ class _LevelTestFinalView extends StatelessWidget {
         fontFamily: 'SF Pro Display',
         fontSize: 16,
         fontWeight: FontWeight.w500,
-        color: Color(0xFF262F63),
+        color: Color(0xFF00897B),
         height: 1.25,
         letterSpacing: -0.85,
       ),
@@ -844,7 +844,7 @@ class _LevelTestFinalView extends StatelessWidget {
         child: ElevatedButton(
           onPressed: isLoading ? null : onSave,
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF262F63),
+            backgroundColor: const Color(0xFF00897B),
             disabledBackgroundColor: const Color(0xFF7F8AC0),
             foregroundColor: Colors.white,
             disabledForegroundColor: Colors.white,

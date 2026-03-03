@@ -166,16 +166,16 @@ class _CustomDatePickerSheetState extends State<CustomDatePickerSheet> {
         
         if (isSelected) {
           decoration = const BoxDecoration(
-            color: Color(0xFF262F63),
+            color: Color(0xFF00897B),
             shape: BoxShape.circle,
           );
           textStyle = const TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w500);
         } else if (isToday) {
           decoration = BoxDecoration(
             shape: BoxShape.circle,
-            border: Border.all(color: const Color(0xFF262F63)),
+            border: Border.all(color: const Color(0xFF00897B)),
           );
-          textStyle = const TextStyle(fontSize: 16, color: Color(0xFF262F63), fontWeight: FontWeight.w500);
+          textStyle = const TextStyle(fontSize: 16, color: Color(0xFF00897B), fontWeight: FontWeight.w500);
         }
 
         return GestureDetector(
@@ -197,7 +197,7 @@ class _CustomDatePickerSheetState extends State<CustomDatePickerSheet> {
   Widget _buildDoneButton() {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: const Color(0xFF262F63),
+        backgroundColor: const Color(0xFF00897B),
         minimumSize: const Size(double.infinity, 48),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),

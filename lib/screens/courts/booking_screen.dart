@@ -279,7 +279,7 @@ class _BookingScreenState extends State<BookingScreen> {
                         fontFamily: 'SF Pro Display',
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
-                        color: Color(0xFF262F63),
+                        color: Color(0xFF00897B),
                         letterSpacing: -0.32,
                       ),
                     ),
@@ -298,8 +298,8 @@ class _BookingScreenState extends State<BookingScreen> {
               child: ElevatedButton(
                 onPressed: _canProceed ? _proceedToPayment : null,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF262F63),
-                  disabledBackgroundColor: const Color(0xFF262F63).withOpacity(0.45),
+                  backgroundColor: const Color(0xFF00897B),
+                  disabledBackgroundColor: const Color(0xFF00897B).withOpacity(0.45),
                   foregroundColor: Colors.white,
                   disabledForegroundColor: Colors.white,
                   elevation: 0,
@@ -355,9 +355,9 @@ class _BookingScreenState extends State<BookingScreen> {
               margin: const EdgeInsets.only(right: 12),
               padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
               decoration: BoxDecoration(
-                color: isSelected ? const Color(0xFF262F63) : Colors.white,
+                color: isSelected ? const Color(0xFF00897B) : Colors.white,
                 border: Border.all(
-                  color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+                  color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
                 ),
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -413,7 +413,7 @@ class _BookingScreenState extends State<BookingScreen> {
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
-                color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+                color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
                 width: 2,
               ),
               borderRadius: BorderRadius.circular(8),
@@ -477,7 +477,7 @@ class _BookingScreenState extends State<BookingScreen> {
                 fontFamily: 'SF Pro Display',
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
-                color: Color(0xFFEC2D20),
+                color: Color(0xFFFF6B6B),
                 letterSpacing: -0.32,
               ),
             ),
@@ -699,7 +699,7 @@ class _BookingScreenState extends State<BookingScreen> {
                                     fontFamily: 'SF Pro Display',
                                     fontSize: 14,
                                     fontWeight: FontWeight.w400,
-                                    color: Color(0xFF262F63),
+                                    color: Color(0xFF00897B),
                                     letterSpacing: -0.28,
                                     height: 1.14,
                                   ),

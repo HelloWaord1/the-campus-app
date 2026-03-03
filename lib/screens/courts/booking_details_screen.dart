@@ -165,7 +165,7 @@ class _BookingDetailsScreenState extends State<BookingDetailsScreen> {
                 child: ElevatedButton(
                   onPressed: () => Navigator.of(context).pop(true),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFEC2D20),
+                    backgroundColor: const Color(0xFFFF6B6B),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -352,7 +352,7 @@ class _BookingDetailsScreenState extends State<BookingDetailsScreen> {
                             margin: const EdgeInsets.only(bottom: 20),
                             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                             decoration: BoxDecoration(
-                              color: const Color(0xFFEC2D20).withOpacity(0.1),
+                              color: const Color(0xFFFF6B6B).withOpacity(0.1),
                               borderRadius: BorderRadius.circular(100),
                             ),
                             child: Row(
@@ -581,7 +581,7 @@ class _BookingDetailsScreenState extends State<BookingDetailsScreen> {
                                 onPressed: _isCancelling ? null : _cancelBooking,
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: const Color(0xFFF0F0F0),
-                                  foregroundColor: const Color(0xFFEC2D20),
+                                  foregroundColor: const Color(0xFFFF6B6B),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8),
                                   ),
@@ -594,7 +594,7 @@ class _BookingDetailsScreenState extends State<BookingDetailsScreen> {
                                         height: 20,
                                         child: CircularProgressIndicator(
                                           strokeWidth: 2,
-                                          color: Color(0xFFEC2D20),
+                                          color: Color(0xFFFF6B6B),
                                         ),
                                       )
                                     : const Text(

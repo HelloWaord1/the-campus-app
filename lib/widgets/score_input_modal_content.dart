@@ -153,7 +153,7 @@ class ScoreInputModalContent extends StatelessWidget {
                   onPressed: (!isFormValid || isSubmitting) ? null : onSubmit,
                   style: TextButton.styleFrom(
                     backgroundColor: (isFormValid && !isSubmitting)
-                        ? const Color(0xFF262F63)
+                        ? const Color(0xFF00897B)
                         : const Color(0xFF7F8AC0),
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(

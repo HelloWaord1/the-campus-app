@@ -352,7 +352,7 @@ class _PlusButton extends StatelessWidget {
           shape: BoxShape.circle,
           border: Border.all(color: Color(0xFF7F8AC0), width: 1),
         ),
-        child: Icon(Icons.add, size: 14, color: Color(0xFF262F63)),
+        child: Icon(Icons.add, size: 14, color: Color(0xFF00897B)),
       ),
     );
   }

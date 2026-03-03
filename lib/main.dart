@@ -45,7 +45,7 @@ class _AppLinkHandler {
   static Future<void> init() async {
     _appLinks ??= AppLinks();
     _appLinks!.uriLinkStream.listen((uri) async {
-      if (uri.host == 'paddle-app.ru' && uri.path == '/vk_id_redirect') {
+      if (uri.host == 'the-campus.app' && uri.path == '/vk_id_redirect') {
         final code = uri.queryParameters['code'];
         if (code != null) {
           try {
@@ -239,7 +239,7 @@ class _MyAppState extends State<MyApp> {
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        const Icon(Icons.system_update_alt, size: 48, color: Color(0xFFEC2D20)),
+                        const Icon(Icons.system_update_alt, size: 48, color: Color(0xFFFF6B6B)),
                         const SizedBox(height: 16),
                         Text(
                           title,
@@ -268,7 +268,7 @@ class _MyAppState extends State<MyApp> {
                               } catch (_) {}
                             },
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFFEC2D20),
+                              backgroundColor: const Color(0xFFFF6B6B),
                               foregroundColor: Colors.white,
                               padding: const EdgeInsets.symmetric(vertical: 12),
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -347,7 +347,7 @@ class _MyAppState extends State<MyApp> {
                                 _navigatorKey.currentState?.pushNamedAndRemoveUntil(target, (route) => false);
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFFEC2D20),
+                                backgroundColor: const Color(0xFFFF6B6B),
                                 foregroundColor: Colors.white,
                                 padding: const EdgeInsets.symmetric(vertical: 12),
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -525,7 +525,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Padel App',
+      title: 'The Campus',
       navigatorKey: _navigatorKey,
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
@@ -536,15 +536,15 @@ class _MyAppState extends State<MyApp> {
         );
       },
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF262F63)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF00897B)),
         useMaterial3: true,
-        //primarySwatch: const Color(0xFF262F63),
-        primaryColor: const Color(0xFF262F63),
-        focusColor: const Color(0xFF262F63),
-        dividerColor: const Color(0xFF262F63).withOpacity(0.2),
-        fontFamily: 'BasisGrotesqueArabicPro',
+        //primarySwatch: const Color(0xFF00897B),
+        primaryColor: const Color(0xFF00897B),
+        focusColor: const Color(0xFF00897B),
+        dividerColor: const Color(0xFF00897B).withOpacity(0.2),
+        fontFamily: 'Inter',
         progressIndicatorTheme: const ProgressIndicatorThemeData(
-          color: Color(0xFF262F63),
+          color: Color(0xFF00897B),
         ),
       ),
       initialRoute: '/',

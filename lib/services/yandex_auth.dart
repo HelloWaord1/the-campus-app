@@ -6,7 +6,7 @@ import '../models/user.dart';
 class YandexAuthService {
   YandexAuthService(this.baseUrl);
 
-  final String baseUrl; // например, https://paddle-app.ru
+  final String baseUrl; // например, https://the-campus.app
 
   Future<UserYandexCallbackResponse> callback(String oauthToken) async {
     final url = Uri.parse('$baseUrl/api/auth/yandex/callback');

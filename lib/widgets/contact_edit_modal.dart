@@ -302,7 +302,7 @@ class _ContactEditModalState extends State<ContactEditModal> {
         child: ElevatedButton(
           onPressed: () => Navigator.of(context).pop(),
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF262F63),
+            backgroundColor: const Color(0xFF00897B),
             foregroundColor: Colors.white,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           ),
@@ -316,7 +316,7 @@ class _ContactEditModalState extends State<ContactEditModal> {
         child: ElevatedButton(
           onPressed: _handleSave,
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF262F63),
+            backgroundColor: const Color(0xFF00897B),
             foregroundColor: Colors.white,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           ),

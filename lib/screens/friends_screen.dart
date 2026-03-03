@@ -130,7 +130,7 @@ class _FriendsScreenState extends State<FriendsScreen> {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.person_add, color: Color(0xFF262F63)),
+            icon: const Icon(Icons.person_add, color: Color(0xFF00897B)),
             onPressed: _navigateToSearchFriends,
           ),
         ],
@@ -237,7 +237,7 @@ class _FriendsScreenState extends State<FriendsScreen> {
     if (_isLoading) {
       return const Center(
         child: CircularProgressIndicator(
-          color: Color(0xFF262F63),
+          color: Color(0xFF00897B),
         ),
       );
     }
@@ -511,7 +511,7 @@ class _FriendsScreenState extends State<FriendsScreen> {
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w400,
-                                      color: Color(0xFFEC2D20),
+                                      color: Color(0xFFFF6B6B),
                                     ),
                                   ),
                                 ],
@@ -690,7 +690,7 @@ class _FriendsScreenState extends State<FriendsScreen> {
             },
             child: const Text(
               'Отправить заявку',
-              style: TextStyle(color: Color(0xFF262F63)),
+              style: TextStyle(color: Color(0xFF00897B)),
             ),
           ),
         ],
@@ -843,7 +843,7 @@ class _FriendRequestsScreenState extends State<FriendRequestsScreen> {
     if (_isLoading) {
       return const Center(
         child: CircularProgressIndicator(
-          color: Color(0xFF262F63),
+          color: Color(0xFF00897B),
         ),
       );
     }
@@ -955,8 +955,8 @@ class _FriendRequestsScreenState extends State<FriendRequestsScreen> {
                   // Уровень из рейтинга пользователя
                   Row(
                     children: [
-                      const Text("Уровень ", style: TextStyle(color: Color(0xFF262F63), fontSize: 16)),
-                      Text(request.formattedRating, style: const TextStyle(color: Color(0xFF262F63), fontSize: 16, fontWeight: FontWeight.w500)),
+                      const Text("Уровень ", style: TextStyle(color: Color(0xFF00897B), fontSize: 16)),
+                      Text(request.formattedRating, style: const TextStyle(color: Color(0xFF00897B), fontSize: 16, fontWeight: FontWeight.w500)),
                     ],
                   ),
                 ],
@@ -971,7 +971,7 @@ class _FriendRequestsScreenState extends State<FriendRequestsScreen> {
             ElevatedButton(
               onPressed: () => _acceptRequest(request),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF262F63),
+                backgroundColor: const Color(0xFF00897B),
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                 padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),

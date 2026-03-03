@@ -601,7 +601,7 @@ class _BookingConfirmationScreenState extends State<BookingConfirmationScreen> {
                                     fontFamily: 'SF Pro Display',
                                     fontSize: 14,
                                     fontWeight: FontWeight.w400,
-                                    color: Color(0xFF262F63),
+                                    color: Color(0xFF00897B),
                                     letterSpacing: -0.28,
                                   ),
                                 ),
@@ -628,8 +628,8 @@ class _BookingConfirmationScreenState extends State<BookingConfirmationScreen> {
                 child: ElevatedButton(
                   onPressed: _isProcessing || !_isFormValid ? null : _confirmBooking,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF262F63),
-                    disabledBackgroundColor: const Color(0xFF262F63).withOpacity(0.45),
+                    backgroundColor: const Color(0xFF00897B),
+                    disabledBackgroundColor: const Color(0xFF00897B).withOpacity(0.45),
                     foregroundColor: Colors.white,
                     disabledForegroundColor: Colors.white,
                     elevation: 0,

@@ -164,7 +164,7 @@ class ClubCard extends StatelessWidget {
                       const Text(
                         'Контакты',
                         style: TextStyle(
-                          color: Color(0xFF262F63),
+                          color: Color(0xFF00897B),
                           fontSize: 12.6,
                           fontWeight: FontWeight.w500,
                           fontFamily: 'SF Pro Display',
@@ -178,7 +178,7 @@ class ClubCard extends StatelessWidget {
                         width: 5,
                         height: 9,
                         colorFilter: const ColorFilter.mode(
-                          Color(0xFF262F63),
+                          Color(0xFF00897B),
                           BlendMode.srcIn,
                         ),
                       ),
@@ -198,7 +198,7 @@ class ClubCard extends StatelessWidget {
               width: 40,
               height: 40,
               decoration: BoxDecoration(
-                color: const Color(0xFF262F63),
+                color: const Color(0xFF00897B),
                 borderRadius: BorderRadius.circular(48),
               ),
               child: Center(

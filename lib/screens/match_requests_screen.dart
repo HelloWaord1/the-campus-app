@@ -159,7 +159,7 @@ void _handleRequest(String requestId, bool accept) async {
                     fontSize: 16, 
                     fontWeight: FontWeight.w400, 
                     letterSpacing: -0.28, 
-                    color: Color(0xFF262F63),
+                    color: Color(0xFF00897B),
                   ),
                 ),
                 Text(
@@ -169,7 +169,7 @@ void _handleRequest(String requestId, bool accept) async {
                     fontSize: 14, 
                     fontWeight: FontWeight.w500, 
                     letterSpacing: -0.24, 
-                    color: Color(0xFF262F63),
+                    color: Color(0xFF00897B),
                   ),
                 ),
               ],

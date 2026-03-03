@@ -146,31 +146,31 @@ class DeepLinkService {
         case 'match':
           final id = (data['match_id'] ?? data['id'])?.toString();
           if (id != null && id.isNotEmpty) {
-            uri = 'https://paddle-app.ru/match/$id';
+            uri = 'https://the-campus.app/match/$id';
           }
           break;
         case 'profile':
           final id = (data['profile_id'] ?? data['id'])?.toString();
           if (id != null && id.isNotEmpty) {
-            uri = 'https://paddle-app.ru/profile/$id';
+            uri = 'https://the-campus.app/profile/$id';
           }
           break;
         case 'club':
           final id = (data['club_id'] ?? data['id'])?.toString();
           if (id != null && id.isNotEmpty) {
-            uri = 'https://paddle-app.ru/club/$id';
+            uri = 'https://the-campus.app/club/$id';
           }
           break;
         case 'competition':
           final id = (data['competition_id'] ?? data['id'])?.toString();
           if (id != null && id.isNotEmpty) {
-            uri = 'https://paddle-app.ru/competition/$id';
+            uri = 'https://the-campus.app/competition/$id';
           }
           break;
         case 'training':
           final id = (data['training_id'] ?? data['id'])?.toString();
           if (id != null && id.isNotEmpty) {
-            uri = 'https://paddle-app.ru/training/$id';
+            uri = 'https://the-campus.app/training/$id';
           }
           break;
         default:
@@ -203,51 +203,51 @@ class DeepLinkService {
     debugPrint('Получена глубокая ссылка: $uri');
     debugPrint('[DeepLinkService] scheme=${uri.scheme}, host=${uri.host}, path=${uri.path}, segments=${uri.pathSegments}');
     
-    // Обрабатываем схему paddle:// для возврата из оплаты
-    if (uri.scheme == 'paddle') {
+    // Обрабатываем схему thecampus:// для возврата из оплаты
+    if (uri.scheme == 'thecampus') {
       final host = uri.host.toLowerCase();
       final pathSegments = uri.pathSegments;
 
       String? trainingId;
       String? bookingId;
 
-      // Формат для тренировок: paddle://training/<id>
+      // Формат для тренировок: thecampus://training/<id>
       if (host == 'training' && pathSegments.isNotEmpty) {
         trainingId = pathSegments.first;
       }
-      // На всякий случай поддерживаем формат paddle:///training/<id>
+      // На всякий случай поддерживаем формат thecampus:///training/<id>
       else if (pathSegments.length >= 2 && pathSegments[0] == 'training') {
         trainingId = pathSegments[1];
       }
 
-      // Формат для бронирований: paddle://booking_success/<id>
+      // Формат для бронирований: thecampus://booking_success/<id>
       if (host == 'booking_success' && pathSegments.isNotEmpty) {
         bookingId = pathSegments.first;
       }
-      // На всякий случай поддерживаем формат paddle:///booking_success/<id>
+      // На всякий случай поддерживаем формат thecampus:///booking_success/<id>
       else if (pathSegments.length >= 2 && pathSegments[0] == 'booking_success') {
         bookingId = pathSegments[1];
       }
 
       if (trainingId != null && trainingId.isNotEmpty) {
-        debugPrint('[DeepLinkService] Payment return (paddle://) training id=$trainingId');
+        debugPrint('[DeepLinkService] Payment return (thecampus://) training id=$trainingId');
         _handleTrainingLink(trainingId);
         return;
       }
 
       if (bookingId != null && bookingId.isNotEmpty) {
-        debugPrint('[DeepLinkService] Payment return (paddle://) booking id=$bookingId');
+        debugPrint('[DeepLinkService] Payment return (thecampus://) booking id=$bookingId');
         _handleBookingSuccessLink(bookingId);
         return;
       }
 
-        debugPrint('[DeepLinkService] Unknown paddle:// link format: $uri');
+        debugPrint('[DeepLinkService] Unknown thecampus:// link format: $uri');
       return;
     }
     
     // Проверяем, что это ссылка на наш домен (допускаем www)
     final host = uri.host.toLowerCase();
-    if (!host.endsWith('paddle-app.ru')) {
+    if (!host.endsWith('the-campus.app')) {
       debugPrint('[DeepLinkService] Ignored: unexpected host ${uri.host}');
       return;
     }

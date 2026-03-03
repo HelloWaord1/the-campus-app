@@ -113,7 +113,7 @@ class BottomNavBar extends StatelessWidget {
                     width: iconWidth ?? 20,
                     height: iconHeight ?? 20,
                     colorFilter: ColorFilter.mode(
-                      isActive ? const Color(0xFF262F63) : const Color(0xFF89867E),
+                      isActive ? const Color(0xFF00897B) : const Color(0xFF89867E),
                       BlendMode.srcIn,
                     ),
                   ),
@@ -125,7 +125,7 @@ class BottomNavBar extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w400,
-                  color: isActive ? const Color(0xFF262F63) : const Color(0xFF89867E),
+                  color: isActive ? const Color(0xFF00897B) : const Color(0xFF89867E),
                   letterSpacing: -0.24,
                 ),
                 maxLines: 1,

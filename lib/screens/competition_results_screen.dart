@@ -227,7 +227,7 @@ class _ResultRow extends StatelessWidget {
     }
     spans.add(TextSpan(
       text: '(' + rating + ')',
-      style: baseStyle.copyWith(color: Color(0xFF262F63), fontWeight: FontWeight.w500),
+      style: baseStyle.copyWith(color: Color(0xFF00897B), fontWeight: FontWeight.w500),
     ));
     if (addComma) {
       spans.add(TextSpan(text: ',', style: baseStyle));
@@ -259,7 +259,7 @@ class _ResultRow extends StatelessWidget {
       overflow: TextOverflow.ellipsis,
       style: const TextStyle(
         fontSize: 14,
-        color: Color(0xFF262F63),
+        color: Color(0xFF00897B),
         fontFamily: 'SF Pro Display',
         fontWeight: FontWeight.w500,
       ),

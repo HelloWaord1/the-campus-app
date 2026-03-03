@@ -192,7 +192,7 @@ class _RatePlayersModalState extends State<RatePlayersModal> {
                                     fontFamily: 'SF Pro Display',
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
-                                    color: Color(0xFF262F63),
+                                    color: Color(0xFF00897B),
                                     letterSpacing: -0.8,
                                     height: 1.286,
                                   ),
@@ -239,7 +239,7 @@ class _RatePlayersModalState extends State<RatePlayersModal> {
                       onPressed: _isCurrentPlayerRated ? _nextPlayer : null,
                       style: ElevatedButton.styleFrom(
                         backgroundColor: _isCurrentPlayerRated 
-                            ? const Color(0xFF262F63) 
+                            ? const Color(0xFF00897B) 
                             : const Color(0xFF7F8AC0),
                         disabledBackgroundColor: const Color(0xFF7F8AC0),
                         padding: const EdgeInsets.symmetric(vertical: 14),
@@ -302,9 +302,9 @@ class _RatePlayersModalState extends State<RatePlayersModal> {
                   height: 24.5,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: isSelected ? const Color(0xFF262F63) : Colors.transparent,
+                    color: isSelected ? const Color(0xFF00897B) : Colors.transparent,
                     border: Border.all(
-                      color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+                      color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
                       width: 2,
                     ),
                   ),

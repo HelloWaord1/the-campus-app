@@ -358,11 +358,11 @@ class _MatchScoreInputState extends State<MatchScoreInput> {
                           height: 52,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
-                            border: Border.all(color: const Color(0xFF262F63), width: 1),
+                            border: Border.all(color: const Color(0xFF00897B), width: 1),
                           ),
                           child: const Icon(
                             Icons.add,
-                            color: Color(0xFF262F63),
+                            color: Color(0xFF00897B),
                             size: 24,
                           ),
                         ),

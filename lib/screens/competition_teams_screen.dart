@@ -235,7 +235,7 @@ class _CompetitionTeamsScreenState extends State<CompetitionTeamsScreen> {
                           : ElevatedButton(
                               onPressed: _joinCompetition,
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF262F63),
+                                backgroundColor: const Color(0xFF00897B),
                                 foregroundColor: Colors.white,
                                 elevation: 0,
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -381,7 +381,7 @@ class _MiniUserTile extends StatelessWidget {
               width: 44,
               height: 44,
               decoration: BoxDecoration(
-                border: Border.all(color: const Color(0xFF262F63)),
+                border: Border.all(color: const Color(0xFF00897B)),
                 shape: BoxShape.circle,
               ),
             ),
@@ -406,7 +406,7 @@ class _MiniUserTile extends StatelessWidget {
             style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w500,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               fontFamily: 'SF Pro Display',
               letterSpacing: -0.28,
             ),
@@ -440,7 +440,7 @@ class _VacancyTile extends StatelessWidget {
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w400,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                 fontFamily: 'SF Pro Display',
                 letterSpacing: -0.28,
               ),
@@ -452,7 +452,7 @@ class _VacancyTile extends StatelessWidget {
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w400,
-                color: Color(0xFF262F63),
+                color: Color(0xFF00897B),
                 fontFamily: 'SF Pro Display',
               ),
             ),
@@ -471,11 +471,11 @@ class _PlusCircle extends StatelessWidget {
       width: 54,
       height: 54,
       decoration: BoxDecoration(
-        border: Border.all(color: const Color(0xFF262F63)),
+        border: Border.all(color: const Color(0xFF00897B)),
         shape: BoxShape.circle,
       ),
       child: const Center(
-        child: Icon(Icons.add, color: Color(0xFF262F63), size: 22),
+        child: Icon(Icons.add, color: Color(0xFF00897B), size: 22),
       ),
     );
   }

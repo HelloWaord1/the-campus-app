@@ -103,7 +103,7 @@ class RatingDetailsScreen extends StatelessWidget {
                       }
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF262F63),
+                      backgroundColor: const Color(0xFF00897B),
                       foregroundColor: Colors.white,
                       elevation: 0,
                       shape: RoundedRectangleBorder(

@@ -35,7 +35,7 @@ class ReliabilityRatingCard extends StatelessWidget {
     if (reliability == null) return const Color(0xFF89867E);
     if (reliability! >= 75) return const Color(0xFF0BAB53);
     if (reliability! >= 50) return const Color(0xFFFFA500);
-    return const Color(0xFFEC2D20);
+    return const Color(0xFFFF6B6B);
   }
 
   // Русская плюрализация: 1 матч, 2 матча, 5 матчей

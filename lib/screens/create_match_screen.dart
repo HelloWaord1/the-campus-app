@@ -198,7 +198,7 @@ class _CreateMatchScreenState extends State<CreateMatchScreen> {
         elevation: 0,
         scrolledUnderElevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Color(0xFF262F63)),
+          icon: const Icon(Icons.arrow_back, color: Color(0xFF00897B)),
           onPressed: () => Navigator.of(context).pop(),
             ),
         title: Text(
@@ -429,17 +429,17 @@ class _CreateMatchScreenState extends State<CreateMatchScreen> {
                       const SizedBox(width: 8),
                                             const Text(
                                               'Изменить',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xFF262F63)),
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xFF00897B)),
                                             ),
                                           ],
                                       )
                                     : Row(
                     children: const [
-                      Icon(Icons.add, color: Color(0xFF262F63)),
+                      Icon(Icons.add, color: Color(0xFF00897B)),
                       SizedBox(width: 12),
                       Text(
                         'Выбрать клуб',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xFF262F63)),
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xFF00897B)),
                                           ),
                                         ],
                                       ),
@@ -469,7 +469,7 @@ class _CreateMatchScreenState extends State<CreateMatchScreen> {
                                           width: 51,
                                           height: 31,
                                           decoration: BoxDecoration(
-              color: _isCourtBooked ? const Color(0xFF262F63) : const Color(0xFFE0E0E0),
+              color: _isCourtBooked ? const Color(0xFF00897B) : const Color(0xFFE0E0E0),
                                             borderRadius: BorderRadius.circular(15.5),
                                           ),
                                           child: AnimatedAlign(
@@ -757,7 +757,7 @@ class _CreateMatchScreenState extends State<CreateMatchScreen> {
                                   border: Border.all(
             color: !isEnabled
                 ? const Color(0xFFD9D9D9)
-                : (isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9)),
+                : (isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9)),
             width: isSelected ? 1.5 : 1.0,
                                   ),
                                 ),
@@ -794,7 +794,7 @@ class _CreateMatchScreenState extends State<CreateMatchScreen> {
       child: ElevatedButton(
         onPressed: _isLoading ? null : _submitMatch,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF262F63),
+          backgroundColor: const Color(0xFF00897B),
           disabledBackgroundColor: const Color(0xFF7F8AC0),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
@@ -841,7 +841,7 @@ class _CreateMatchScreenState extends State<CreateMatchScreen> {
             style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w500,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               fontFamily: 'Basis Grotesque Arabic Pro',
               letterSpacing: -0.28,
             ),
@@ -900,7 +900,7 @@ class _CreateMatchScreenState extends State<CreateMatchScreen> {
             style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w500,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               fontFamily: 'Basis Grotesque Arabic Pro',
               letterSpacing: -0.28,
             ),
@@ -973,13 +973,13 @@ class _CreateMatchScreenState extends State<CreateMatchScreen> {
                                                       child: Container(
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
-                border: Border.all(color: const Color(0xFF262F63), width: 1.5),
+                border: Border.all(color: const Color(0xFF00897B), width: 1.5),
                                               ),
-              child: const Center(child: Icon(Icons.add, color: Color(0xFF262F63))),
+              child: const Center(child: Icon(Icons.add, color: Color(0xFF00897B))),
             ),
                                             ),
           const SizedBox(height: 6),
-          const Text('Добавить', style: TextStyle(color: Color(0xFF262F63))),
+          const Text('Добавить', style: TextStyle(color: Color(0xFF00897B))),
         ],
       ),
     );

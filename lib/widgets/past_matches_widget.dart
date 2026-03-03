@@ -56,7 +56,7 @@ class PastMatchesWidget extends StatelessWidget {
                       fontFamily: 'SF Pro Display',
                       fontWeight: FontWeight.w400,
                       fontSize: 16,
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                     ),
                   ),
                 ),

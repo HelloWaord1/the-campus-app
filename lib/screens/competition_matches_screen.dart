@@ -399,7 +399,7 @@ class _RoundsProgress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const Color completedColor = Color(0xFF262F63); // Зеленый для завершенных
+    const Color completedColor = Color(0xFF00897B); // Зеленый для завершенных
     const Color upcomingColor = Color(0xFFE6E6E6); // Серый для предстоящих
     const double d = 10.0; // диаметр точки
 

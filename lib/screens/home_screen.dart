@@ -390,7 +390,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               _logout();
                             },
                             style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFEC2D20),
+                      backgroundColor: const Color(0xFFFF6B6B),
                               foregroundColor: Colors.white,
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                               elevation: 0,
@@ -500,7 +500,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               }
                             },
                             style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFEC2D20),
+                      backgroundColor: const Color(0xFFFF6B6B),
                               foregroundColor: Colors.white,
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                               elevation: 0,
@@ -535,13 +535,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildHomeTab() {
     return Container(
-      color: const Color(0xFF262F63), // Зелёный фон для всего экрана
+      color: const Color(0xFF00897B), // Зелёный фон для всего экрана
       child: Column(
         children: [
           // Верхний зелёный блок с приветствием
           Container(
             width: double.infinity,
-            color: const Color(0xFF262F63),
+            color: const Color(0xFF00897B),
             child: SafeArea(
               bottom: false,
             child: Padding(
@@ -677,7 +677,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontSize: 16,
                       height: 1.25,
                       letterSpacing: -0.8,
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                     ),
                   ),
                 ),
@@ -759,7 +759,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontSize: 16,
                       height: 1.25,
                       letterSpacing: -0.8,
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                     ),
                   ),
                 ),
@@ -1286,7 +1286,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF262F63),
+                      color: const Color(0xFF00897B),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(
@@ -1599,7 +1599,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF262F63),
+                  color: const Color(0xFF00897B),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Center(
@@ -1698,7 +1698,7 @@ class _HomeScreenState extends State<HomeScreen> {
       print('🎯 _buildProfileTab: Showing loading indicator');
       return const Center(
         child: CircularProgressIndicator(
-          color: Color(0xFF262F63),
+          color: Color(0xFF00897B),
         ),
       );
     }
@@ -1766,7 +1766,7 @@ class _HomeScreenState extends State<HomeScreen> {
       });
       return const Center(
         child: CircularProgressIndicator(
-          color: Color(0xFF262F63),
+          color: Color(0xFF00897B),
         ),
       );
     }
@@ -1807,7 +1807,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontFamily: 'SF Pro Display',
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                       letterSpacing: -0.52,
                     ),
                   ),
@@ -2012,7 +2012,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   icon: Icons.description,
                   customIcon: SvgPicture.asset('assets/images/data_processing.svg', width: 22, height: 22),
                   label: 'Обработка персональных данных',
-                  onTap: () => _openExternalUrl('https://paddle-app.ru/data-processing-policy.pdf'),
+                  onTap: () => _openExternalUrl('https://the-campus.app/data-processing-policy.pdf'),
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(12),
                     topRight: Radius.circular(12),
@@ -2025,7 +2025,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   icon: Icons.visibility,
                   customIcon: SvgPicture.asset('assets/images/privacy_policy.svg', width: 22, height: 22),
                   label: 'Политика конфиденциальности',
-                  onTap: () => _openExternalUrl('https://paddle-app.ru/privacy-policy.pdf'),
+                  onTap: () => _openExternalUrl('https://the-campus.app/privacy-policy.pdf'),
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(0),
                     topRight: Radius.circular(0),
@@ -2243,7 +2243,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onPressed: () => Navigator.of(context).pop(),
                       child: const Text('Ок', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF262F63),
+                        backgroundColor: const Color(0xFF00897B),
                         foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         padding: EdgeInsets.zero, // убрать лишний padding
@@ -3236,14 +3236,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   LineChartBarData(
                     spots: spots,
                     isCurved: false, // Ломаная линия
-                    color: const Color(0xFF262F63),
+                    color: const Color(0xFF00897B),
                     barWidth: 2,
                     dotData: FlDotData(
                       show: true,
                       getDotPainter: (spot, percent, barData, index) {
                         return FlDotCirclePainter(
                           radius: 4,
-                          color: const Color(0xFF262F63),
+                          color: const Color(0xFF00897B),
                           strokeWidth: 0,
                         );
                       },
@@ -3254,8 +3254,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          const Color(0xFF262F63).withOpacity(0.12), // чуть заметнее, как в макете
-                          const Color(0xFF262F63).withOpacity(0.0),
+                          const Color(0xFF00897B).withOpacity(0.12), // чуть заметнее, как в макете
+                          const Color(0xFF00897B).withOpacity(0.0),
                         ],
                         stops: const [0.0, 1.0],
                       ),
@@ -3265,7 +3265,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 lineTouchData: LineTouchData(
                   enabled: true,
                   touchTooltipData: LineTouchTooltipData(
-                    tooltipBgColor: const Color(0xFF262F63),
+                    tooltipBgColor: const Color(0xFF00897B),
                     tooltipRoundedRadius: 20,
                     getTooltipItems: (touchedSpots) {
                       return touchedSpots.map((spot) {
@@ -3284,7 +3284,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     return spotIndexes.map((index) {
                       return TouchedSpotIndicatorData(
                         FlLine(
-                          color: const Color(0xFF262F63),
+                          color: const Color(0xFF00897B),
                           strokeWidth: 2,
                           dashArray: [8, 8],
                         ),
@@ -3309,7 +3309,7 @@ class _HomeScreenState extends State<HomeScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
         border: Border.all(
-          color: isSelected ? const Color(0xFF262F63) : const Color(0xFFD9D9D9),
+          color: isSelected ? const Color(0xFF00897B) : const Color(0xFFD9D9D9),
           width: isSelected ? 2 : 1,
         ),
         borderRadius: BorderRadius.circular(8),
@@ -3786,7 +3786,7 @@ class _ScoreInputModalState extends State<_ScoreInputModal> {
                 child: TextButton(
                   onPressed: _confirmHostScore,
                   style: TextButton.styleFrom(
-                    backgroundColor: const Color(0xFF262F63),
+                    backgroundColor: const Color(0xFF00897B),
                     padding: const EdgeInsets.symmetric(vertical: 14.5),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -4313,7 +4313,7 @@ class _LevelTestFinalModal extends StatelessWidget {
                         style: const TextStyle(
                           fontSize: 48,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xFF262F63),
+                          color: Color(0xFF00897B),
                           fontFamily: 'Basis Grotesque Arabic Pro',
                         ),
                       ),
@@ -4336,7 +4336,7 @@ class _LevelTestFinalModal extends StatelessWidget {
             SizedBox(height: 8),
             const Text(
               'Сейчас ты можешь пройти тест повторно.',
-              style: TextStyle(fontSize: 16, color: Color(0xFF262F63), fontWeight: FontWeight.w500),
+              style: TextStyle(fontSize: 16, color: Color(0xFF00897B), fontWeight: FontWeight.w500),
             ),
             SizedBox(height: 8),
             const Text(
@@ -4364,7 +4364,7 @@ class _LevelTestFinalModal extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: isLoading ? null : onSave,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF262F63),
+                      backgroundColor: const Color(0xFF00897B),
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                       padding: const EdgeInsets.symmetric(vertical: 16),

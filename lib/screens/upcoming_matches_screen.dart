@@ -261,7 +261,7 @@ class _ParticipantSlotColumn extends StatelessWidget {
             fontFamily: 'SF Pro Display',
             fontSize: 14,
             fontWeight: FontWeight.w500,
-            color: Color(0xFF262F63),
+            color: Color(0xFF00897B),
           ),
         ),
       ],

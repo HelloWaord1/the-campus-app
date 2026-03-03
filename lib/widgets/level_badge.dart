@@ -94,7 +94,7 @@ class LevelBadge extends StatelessWidget {
     
     if (reliability < 30) {
       reliabilityLevel = 'Низкий';
-      reliabilityColor = const Color(0xFFEC2D20); // Красный
+      reliabilityColor = const Color(0xFFFF6B6B); // Красный
     } else if (reliability >= 30 && reliability < 70) {
       reliabilityLevel = 'Средний';
       reliabilityColor = const Color(0xFFF98213); // Оранжевый

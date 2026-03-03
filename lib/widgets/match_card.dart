@@ -244,7 +244,7 @@ class MatchCard extends StatelessWidget {
             style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w500,
-              color: Color(0xFF262F63),
+              color: Color(0xFF00897B),
               fontFamily: 'Basis Grotesque Arabic Pro',
               letterSpacing: -0.28,
             ),
@@ -268,14 +268,14 @@ class MatchCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(radius),
               border: (isTournament || isSingle)
                   ? Border.all(color: const Color(0xFFF7F7F7), width: 2)
-                  : Border.all(color: const Color(0xFF262F63), width: 1),
+                  : Border.all(color: const Color(0xFF00897B), width: 1),
             ),
             child: Center(
               child: (isTournament || isSingle)
                   ? SvgPicture.asset('assets/images/waiting.svg', width: 20, height: 20)
                   : const Icon(
                       Icons.add,
-                      color: Color(0xFF262F63),
+                      color: Color(0xFF00897B),
                       size: 20,
                     ),
             ),
@@ -286,7 +286,7 @@ class MatchCard extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w400,
-              color: (isTournament || isSingle) ? const Color(0xFF89867E) : const Color(0xFF262F63),
+              color: (isTournament || isSingle) ? const Color(0xFF89867E) : const Color(0xFF00897B),
               fontFamily: 'Basis Grotesque Arabic Pro',
               letterSpacing: -0.28,
             ),
