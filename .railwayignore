@@ -1,0 +1,16 @@
+.git
+.github
+.dart_tool
+.idea
+build
+ios
+android
+macos
+linux
+windows
+docs
+test
+*.md
+.metadata
+devtools_options.yaml
+analysis_options.yaml
