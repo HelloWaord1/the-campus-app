@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:padel/screens/register_screen.dart';
+import 'package:the_campus/screens/register_screen.dart';
 import '../services/api_service.dart';
 import '../services/auth_storage.dart';
 import 'home_screen.dart';

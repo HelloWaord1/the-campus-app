@@ -1,4 +1,4 @@
-package rocket.padel
+package com.thecampus.app
 
 import io.flutter.embedding.android.FlutterActivity
 import android.app.Application

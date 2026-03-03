@@ -6,7 +6,7 @@
   <string>production</string>
   <key>com.apple.developer.associated-domains</key>
   <array>
-    <string>applinks:paddle-app.ru</string>
+    <string>applinks:thecampus.app</string>
   </array>
 
   <!-- Добавляем этот блок -->

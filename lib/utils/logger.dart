@@ -2,7 +2,7 @@ import 'dart:developer' as developer;
 import '../services/api_service.dart';
 
 class Logger {
-  static const String _tag = 'PadelApp';
+  static const String _tag = 'TheCampus';
 
   // Логирование ошибок
   static void error(String message, [dynamic error, StackTrace? stackTrace]) {

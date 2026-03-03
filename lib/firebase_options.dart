@@ -63,6 +63,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '46566986830',
     projectId: 'paddle-tennis-ace',
     storageBucket: 'paddle-tennis-ace.firebasestorage.app',
-    iosBundleId: 'com.skweb.paddleapp',
+    iosBundleId: 'com.thecampus.app',
   );
 }

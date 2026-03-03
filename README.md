@@ -1,4 +1,4 @@
-# Padel App
+# The Campus
 
 Flutter приложение для игры в падел с функциональностью регистрации пользователей.
 
@@ -38,8 +38,8 @@ lib/
 ### 1. Клонирование репозитория
 
 ```bash
-git clone git@github.com:Sk-WebStudio/paddle-app.git
-cd paddle-app
+git clone git@github.com:Sk-WebStudio/the-campus.git
+cd the-campus
 ```
 
 ### 2. Добавление логотипа
@@ -98,7 +98,7 @@ flutter run -d chrome
 2. **Настройка Bundle Identifier:**
    - В Xcode выберите проект `Runner` в навигаторе
    - Перейдите в `Signing & Capabilities`
-   - Убедитесь, что Bundle Identifier установлен как `com.daniilgoryunov.padelapp`
+   - Убедитесь, что Bundle Identifier установлен как `com.thecampus.app`
    - Выберите вашу команду разработчика в поле `Team`
 
 3. **Выбор устройства:**
@@ -116,14 +116,14 @@ flutter run -d chrome
 2. Найдите все строки с `PRODUCT_BUNDLE_IDENTIFIER`
 3. Измените на уникальный идентификатор:
    ```
-   PRODUCT_BUNDLE_IDENTIFIER = com.yourdomain.padelapp;
+   PRODUCT_BUNDLE_IDENTIFIER = com.thecampus.app;
    ```
 
 ## API
 
 Приложение интегрируется с бэкенд API:
 
-- **Base URL**: https://paddleserver-production.up.railway.app
+- **Base URL**: https://thecampus-production.up.railway.app
 - **Эндпоинт регистрации**: POST /api/register
 
 ### Поля регистрации

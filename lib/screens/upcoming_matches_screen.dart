@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
-import 'package:padel/models/match.dart';
-import 'package:padel/utils/rating_utils.dart';
+import 'package:the_campus/models/match.dart';
+import 'package:the_campus/utils/rating_utils.dart';
 import '../widgets/user_avatar.dart';
 
 class UpcomingMatchesScreen extends StatelessWidget {
