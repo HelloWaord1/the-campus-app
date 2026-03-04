@@ -173,7 +173,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   Widget _buildLogo() {
     return SvgPicture.asset(
-      'assets/images/rocket_padel_white_label.svg',
+      'assets/images/the_campus_white_label.svg',
       height: 110,
       width: 110,
     );

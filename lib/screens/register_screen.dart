@@ -303,7 +303,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   Widget _buildLogo() {
     return SvgPicture.asset(
-      'assets/images/ace_logo_icon.svg',
+      'assets/images/the_campus_icon.svg',
       height: 72,
     );
   }
